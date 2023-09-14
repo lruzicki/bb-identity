@@ -50,7 +50,8 @@ Given(
     contentType,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withHeaders('content-type', contentType)
+      .withHeaders('content-type', contentType,
+      ...existingHeaders)
       .withJson({
         grant_type: grantType,
         client_assertion_type: clientAssertionType,
