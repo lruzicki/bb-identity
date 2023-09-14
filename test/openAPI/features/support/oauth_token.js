@@ -50,7 +50,7 @@ Given(
     contentType,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withHeader('content-type', contentType)
+      .withHeaders('content-type', contentType)
       .withJson({
         grant_type: grantType,
         client_assertion_type: clientAssertionType,
@@ -117,7 +117,7 @@ When(
     contentType,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withHeader('content-type', contentType)
+      .withHeaders('content-type', contentType)
       .withJson({
         grant_type: grantType,
         client_assertion_type: clientAssertionType,
@@ -155,7 +155,7 @@ When(
     contentType,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withHeader('content-type', contentType)
+      .withHeaders('content-type', contentType)
       .withJson({
         grant_type: grantType,
         client_assertion_type: null,
@@ -206,7 +206,7 @@ When(
     contentType,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withHeader('content-type', contentType)
+      .withHeaders('content-type', contentType)
       .withJson({
         grant_type: grantType,
         client_assertion_type: clientAssertionType,
