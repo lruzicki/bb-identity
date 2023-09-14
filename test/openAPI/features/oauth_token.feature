@@ -4,7 +4,7 @@ Feature: API to create access token
   @smoke
   Scenario: The user successfully receives the id and access token smoke type test
     Given The user wants to receive the id token and access token
-    When The User sends POST request with given "authorization_code" as grantType, "code" as code, "payment-service" as clientId, "urn:ietf:params:oauth:client-assertion-type:jwt-bearer" as clientAssertionType, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9." as clientAssertion, "http://example.com" as redirectUri, "payment-service" as iss, "payment-service" as sub, "IDBB server" as aud, 1024 as exp, 1516239022 as iat
+    When The User sends POST request with given "authorization_code" as grantType, "code" as code, "payment-service" as clientId, "urn:ietf:params:oauth:client-assertion-type:jwt-bearer" as clientAssertionType, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9." as clientAssertion, "http://example.com" as redirectUri, "payment-service" as iss, "payment-service" as sub, "IDBB server" as aud, 1024 as exp, 1516239022 as iat, "application/x-www-form-urlencoded" as contentType
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 200
@@ -15,7 +15,7 @@ Feature: API to create access token
   @unit @positive
   Scenario Outline: The user successfully receives the id and access token
     Given The user wants to receive the id token and access token
-    When The User sends POST request with given "authorization_code" as grantType, "code" as code, "<clientId>" as clientId, "urn:ietf:params:oauth:client-assertion-type:jwt-bearer" as clientAssertionType, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9." as clientAssertion, "<redirectUri>" as redirectUri, "<clientId>" as iss, "<clientId>" as sub, "<audience>" as aud, 1024 as exp, 1516239022 as iat
+    When The User sends POST request with given "authorization_code" as grantType, "code" as code, "<clientId>" as clientId, "urn:ietf:params:oauth:client-assertion-type:jwt-bearer" as clientAssertionType, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9." as clientAssertion, "<redirectUri>" as redirectUri, "<clientId>" as iss, "<clientId>" as sub, "<audience>" as aud, 1024 as exp, 1516239022 as iat, "application/x-www-form-urlencoded" as contentType
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 200
@@ -31,7 +31,7 @@ Feature: API to create access token
       | health-service     | IDBB server4 | http://redirectMe4.com |
 
   Scenario: The user is not able to receive the ID and access token because of the invalid client_assertion
-    When The User sends POST request with given "authorization_code" as grantType, "code" as code, "payment-service" as clientId, "urn:ietf:params:oauth:client-assertion-type:jwt-bearer" as clientAssertionType, "http://example.com" as redirectUri
+    When The User sends POST request with given "authorization_code" as grantType, "code" as code, "payment-service" as clientId, "urn:ietf:params:oauth:client-assertion-type:jwt-bearer" as clientAssertionType, "http://example.com" as redirectUri, "application/x-www-form-urlencoded" as contentType
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 400
@@ -41,7 +41,7 @@ Feature: API to create access token
 
   Scenario: The user is not able to receive the ID and access token because of the invalid client_assertion_type
     Given The user wants to receive the id token and access token
-    When The User sends POST request with given "authorization_code" as grantType, "code" as code, "payment-service" as clientId, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9." as clientAssertion, "http://example.com" as redirectUri
+    When The User sends POST request with given "authorization_code" as grantType, "code" as code, "payment-service" as clientId, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9." as clientAssertion, "http://example.com" as redirectUri, "application/x-www-form-urlencoded" as contentType
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 400
@@ -51,7 +51,7 @@ Feature: API to create access token
 
   Scenario: The user is not able to receive the ID and access token because of the invalid redirect_uri
     Given The user wants to receive the id token and access token
-    When The User sends POST request with given "authorization_code" as grantType, "code" as code, "payment-service" as clientId, "urn:ietf:params:oauth:client-assertion-type:jwt-bearer" as clientAssertionType, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9." as clientAssertion
+    When The User sends POST request with given "authorization_code" as grantType, "code" as code, "payment-service" as clientId, "urn:ietf:params:oauth:client-assertion-type:jwt-bearer" as clientAssertionType, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9." as clientAssertion, "application/x-www-form-urlencoded" as contentType
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 400
@@ -61,7 +61,7 @@ Feature: API to create access token
 
   Scenario: The user is not able to receive the ID and access token because of the invalid input
     Given The user wants to receive the id token and access token
-    When The User sends POST request with given "" as grantType, "" as code, "" as clientId, "" as clientAssertionType, "" as clientAssertion, "" as redirectUri
+    When The User sends POST request with given "" as grantType, "" as code, "" as clientId, "" as clientAssertionType, "" as clientAssertion, "" as redirectUri, "application/x-www-form-urlencoded" as contentType
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 400
@@ -71,7 +71,7 @@ Feature: API to create access token
 
   Scenario: The user is not able to receive the ID and access token because of the empty payload
     Given The user wants to receive the id token and access token
-    When The User sends POST request without a payload
+    When The User sends POST request without a payload, "application/x-www-form-urlencoded" as contentType
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 400
