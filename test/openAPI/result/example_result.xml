@@ -1,0 +1,904 @@
+<?xml version="1.0"?>
+<testsuite failures="11" skipped="0" name="cucumber-js" time="31.037697357000003" tests="82">
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="The new client is successfully added to the Open ID Connect (OIDC) smoke type test" time="0.026427838000000002">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given requestTime, "e-health-service"...passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should contain ...passed
+And The POST /client-mgmt/oidc-client endpoint response should contain ...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="The new client is successfully added to the Open ID Connect (OIDC)" time="0.009779749999999999">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given requestTime, "payment-service" ...passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should contain ...passed
+And The POST /client-mgmt/oidc-client endpoint response should contain ...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="The new client is successfully added to the Open ID Connect (OIDC) [1]" time="0.010319612000000002">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given requestTime, "e-bank-service" a...passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should contain ...passed
+And The POST /client-mgmt/oidc-client endpoint response should contain ...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="The new client is successfully added to the Open ID Connect (OIDC) [2]" time="0.010418063">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given requestTime, "e-commerce-servic...passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should contain ...passed
+And The POST /client-mgmt/oidc-client endpoint response should contain ...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="The new client is successfully added to the Open ID Connect (OIDC) [3]" time="0.008001654">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given requestTime, "health-service" a...passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should contain ...passed
+And The POST /client-mgmt/oidc-client endpoint response should contain ...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="Not able to add the new client to the Open ID Connect (OIDC) because of invalid requestTime" time="0.009085666999999999">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given "2011-10-05" as invalid request...passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should match wi...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="Not able to add the new client to the Open ID Connect (OIDC) because of invalid authContextRefs" time="0.010612914000000001">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given "idbb:acr:invalid" as invalid a...passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should match wi...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="Not able to add the new client to the Open ID Connect (OIDC) because of invalid userClaims" time="0.010351031">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given "invalid_claims" as invalid use...passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should match wi...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="Not able to add the new client to the Open ID Connect (OIDC) because of invalid grantTypes" time="0.010283548000000002">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given "invalid_code" as invalid grant...passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should match wi...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="Not able to add the new client to the Open ID Connect (OIDC) because of invalid clientAuthMethods" time="0.009340590999999999">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given "invalid_auth_method" as invali...passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should match wi...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="Not able to add the new client to the Open ID Connect (OIDC) because of invalid clientName" time="0.010406115999999998">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given '' as invalid clientName..........passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should match wi...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="Not able to add the new client to the Open ID Connect (OIDC) because of invalid relyingPartyId" time="0.012597331">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given '' as invalid relyingPartyId......passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should match wi...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="Not able to add the new client to the Open ID Connect (OIDC) because of invalid logoUri" time="0.010737632">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given '' as invalid logoUri.............passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should match wi...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="Not able to add the new client to the Open ID Connect (OIDC) because of invalid clientId" time="0.009995266000000001">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given '' as invalid clientId............passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should match wi...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="Not able to add the new client to the Open ID Connect (OIDC) because of invalid publicKey" time="0.010115674999999998">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given publicKey as a string not JWT f...passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should match wi...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="Not able to add the new client to the Open ID Connect (OIDC) because of empty array of redirectUris" time="0.008260273">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given none redirectUris.................passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should match wi...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to add new open ID connect (OIDC) clients." name="Not able to add the new client to the Open ID Connect (OIDC) because of duplicate clientId" time="0.009463752">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+When User sends POST request with given "e-health-service" as clientId....passed
+Then User receives a response from the POST /client-mgmt/oidc-client en...passed
+And The POST /client-mgmt/oidc-client endpoint response should be retur...passed
+And The POST /client-mgmt/oidc-client endpoint response should have sta...passed
+And The POST /client-mgmt/oidc-client response should have "content-typ...passed
+And The POST /client-mgmt/oidc-client endpoint response should match js...passed
+And The POST /client-mgmt/oidc-client endpoint response should match wi...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to update existing Open ID Connect (OIDC) client." name="The client profile is successfully updated in the Open ID Connect (OIDC) smoke type test" time="0.014204631999999998">
+    <system-out><![CDATA[Given The user wants to update the client profile in the Open ID Connec...passed
+And The client profile with "e-health-service" as clientId is created.....passed
+When User sends PUT request with given "e-health-service" as client_id ...passed
+Then User receives a response from the PUT /client-mgmt/oidc-client/{cl...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} response should have "...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to update existing Open ID Connect (OIDC) client." name="Not able to update the client because of invalid clientAuthMethods" time="0.017654607">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+And The client profile with "e-health-service-01" as clientId is create...passed
+When User sends PUT request with given "invalid_auth_method" as invalid...passed
+Then User receives a response from the PUT /client-mgmt/oidc-client/{cl...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} response should have "...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to update existing Open ID Connect (OIDC) client." name="Not able to update the client because of invalid grantTypes" time="0.017809932">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+And The client profile with "e-health-service-02" as clientId is create...passed
+When User sends PUT request with given "invalid_code" as invalid grantT...passed
+Then User receives a response from the PUT /client-mgmt/oidc-client/{cl...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} response should have "...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to update existing Open ID Connect (OIDC) client." name="Not able to update the client because of invalid userClaims" time="0.012172064">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+And The client profile with "e-health-service-03" as clientId is create...passed
+When User sends PUT request with given "invalid_claims" as invalid user...passed
+Then User receives a response from the PUT /client-mgmt/oidc-client/{cl...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} response should have "...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to update existing Open ID Connect (OIDC) client." name="Not able to update the client because of invalid authContextRefs" time="0.013100108000000001">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+And The client profile with "e-health-service-04" as clientId is create...passed
+When User sends PUT request with given "idbb:acr:invalid" as invalid au...passed
+Then User receives a response from the PUT /client-mgmt/oidc-client/{cl...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} response should have "...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to update existing Open ID Connect (OIDC) client." name="Not able to update the client because of invalid redirectUri" time="0.017745983">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+And The client profile with "e-health-service-05" as clientId is create...passed
+When User sends PUT request with given "" as invalid redirectUri..........passed
+Then User receives a response from the PUT /client-mgmt/oidc-client/{cl...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} response should have "...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to update existing Open ID Connect (OIDC) client." name="Not able to update the client because of invalid logoUri" time="0.018538886999999997">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+And The client profile with "e-health-service-06" as clientId is create...passed
+When User sends PUT request with given "" as invalid logoUri..............passed
+Then User receives a response from the PUT /client-mgmt/oidc-client/{cl...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} response should have "...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to update existing Open ID Connect (OIDC) client." name="Not able to update the client because of invalid clientName" time="0.023622660999999996">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+And The client profile with "e-health-service-07" as clientId is create...passed
+When User sends PUT request with given "" as invalid clientName...........passed
+Then User receives a response from the PUT /client-mgmt/oidc-client/{cl...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} response should have "...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to update existing Open ID Connect (OIDC) client." name="Not able to update the client because of invalid client_id" time="0.026198086000000002">
+    <system-out><![CDATA[Given The user wants to add the new client to the Open ID Connect (OIDC...passed
+And The client profile with "e-health-service-08" as clientId is create...passed
+When User sends PUT request with given "e-service" as invalid client_id...passed
+Then User receives a response from the PUT /client-mgmt/oidc-client/{cl...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} response should have "...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed
+And The PUT /client-mgmt/oidc-client/{client_id} endpoint response shou...passed]]></system-out>
+  </testcase>
+  <testcase classname="API to create access token" name="The user successfully receives the id and access token smoke type test" time="0.006228268">
+    <failure type="FAILED" message="A hook or step failed"><![CDATA[AssertionError [ERR_ASSERTION]: Header value '2137' did not match for header 'content-type': 'application/json; charset=utf-8'
+    at Expect.fail (/app/node_modules/pactum/src/models/expect.js:444:12)
+    at Expect._validateHeaderContains (/app/node_modules/pactum/src/models/expect.js:176:18)
+    at Expect.validate (/app/node_modules/pactum/src/models/expect.js:48:10)
+    at Have._validate (/app/node_modules/pactum/src/exports/expect.js:111:26)
+    at Have.headerContains (/app/node_modules/pactum/src/exports/expect.js:24:10)
+    at World.<anonymous> (/app/features/support/oauth_token.js:88:20)]]></failure>
+    <system-out><![CDATA[Given The user wants to receive the id token and access token.............passed
+When The User sends POST request with given "authorization_code" as gra...passed
+Then User receives a response from the POST /oauth/token endpoint.........passed
+And The POST /oauth/token endpoint response should be returned in a tim...passed
+And The POST /oauth/token endpoint response should have status 200........passed
+And The POST /oauth/token response should have "content-type": "applica...failed
+And The POST /oauth/token endpoint response should match json schema.....skipped
+And The POST /oauth/token endpoint response should contain "eyJhbGciOi...skipped]]></system-out>
+  </testcase>
+  <testcase classname="API to create access token" name="The user successfully receives the id and access token" time="0.005018124">
+    <failure type="FAILED" message="A hook or step failed"><![CDATA[AssertionError [ERR_ASSERTION]: Header value '2137' did not match for header 'content-type': 'application/json; charset=utf-8'
+    at Expect.fail (/app/node_modules/pactum/src/models/expect.js:444:12)
+    at Expect._validateHeaderContains (/app/node_modules/pactum/src/models/expect.js:176:18)
+    at Expect.validate (/app/node_modules/pactum/src/models/expect.js:48:10)
+    at Have._validate (/app/node_modules/pactum/src/exports/expect.js:111:26)
+    at Have.headerContains (/app/node_modules/pactum/src/exports/expect.js:24:10)
+    at World.<anonymous> (/app/features/support/oauth_token.js:88:20)]]></failure>
+    <system-out><![CDATA[Given The user wants to receive the id token and access token.............passed
+When The User sends POST request with given "authorization_code" as gra...passed
+Then User receives a response from the POST /oauth/token endpoint.........passed
+And The POST /oauth/token endpoint response should be returned in a tim...passed
+And The POST /oauth/token endpoint response should have status 200........passed
+And The POST /oauth/token response should have "content-type": "applica...failed
+And The POST /oauth/token endpoint response should match json schema.....skipped
+And The POST /oauth/token endpoint response should contain "eyJhbGciOi...skipped]]></system-out>
+  </testcase>
+  <testcase classname="API to create access token" name="The user successfully receives the id and access token [1]" time="0.004650887">
+    <failure type="FAILED" message="A hook or step failed"><![CDATA[AssertionError [ERR_ASSERTION]: Header value '2137' did not match for header 'content-type': 'application/json; charset=utf-8'
+    at Expect.fail (/app/node_modules/pactum/src/models/expect.js:444:12)
+    at Expect._validateHeaderContains (/app/node_modules/pactum/src/models/expect.js:176:18)
+    at Expect.validate (/app/node_modules/pactum/src/models/expect.js:48:10)
+    at Have._validate (/app/node_modules/pactum/src/exports/expect.js:111:26)
+    at Have.headerContains (/app/node_modules/pactum/src/exports/expect.js:24:10)
+    at World.<anonymous> (/app/features/support/oauth_token.js:88:20)]]></failure>
+    <system-out><![CDATA[Given The user wants to receive the id token and access token.............passed
+When The User sends POST request with given "authorization_code" as gra...passed
+Then User receives a response from the POST /oauth/token endpoint.........passed
+And The POST /oauth/token endpoint response should be returned in a tim...passed
+And The POST /oauth/token endpoint response should have status 200........passed
+And The POST /oauth/token response should have "content-type": "applica...failed
+And The POST /oauth/token endpoint response should match json schema.....skipped
+And The POST /oauth/token endpoint response should contain "eyJhbGciOi...skipped]]></system-out>
+  </testcase>
+  <testcase classname="API to create access token" name="The user successfully receives the id and access token [2]" time="0.004655371999999999">
+    <failure type="FAILED" message="A hook or step failed"><![CDATA[AssertionError [ERR_ASSERTION]: Header value '2137' did not match for header 'content-type': 'application/json; charset=utf-8'
+    at Expect.fail (/app/node_modules/pactum/src/models/expect.js:444:12)
+    at Expect._validateHeaderContains (/app/node_modules/pactum/src/models/expect.js:176:18)
+    at Expect.validate (/app/node_modules/pactum/src/models/expect.js:48:10)
+    at Have._validate (/app/node_modules/pactum/src/exports/expect.js:111:26)
+    at Have.headerContains (/app/node_modules/pactum/src/exports/expect.js:24:10)
+    at World.<anonymous> (/app/features/support/oauth_token.js:88:20)]]></failure>
+    <system-out><![CDATA[Given The user wants to receive the id token and access token.............passed
+When The User sends POST request with given "authorization_code" as gra...passed
+Then User receives a response from the POST /oauth/token endpoint.........passed
+And The POST /oauth/token endpoint response should be returned in a tim...passed
+And The POST /oauth/token endpoint response should have status 200........passed
+And The POST /oauth/token response should have "content-type": "applica...failed
+And The POST /oauth/token endpoint response should match json schema.....skipped
+And The POST /oauth/token endpoint response should contain "eyJhbGciOi...skipped]]></system-out>
+  </testcase>
+  <testcase classname="API to create access token" name="The user successfully receives the id and access token [3]" time="0.004631854">
+    <failure type="FAILED" message="A hook or step failed"><![CDATA[AssertionError [ERR_ASSERTION]: Header value '2137' did not match for header 'content-type': 'application/json; charset=utf-8'
+    at Expect.fail (/app/node_modules/pactum/src/models/expect.js:444:12)
+    at Expect._validateHeaderContains (/app/node_modules/pactum/src/models/expect.js:176:18)
+    at Expect.validate (/app/node_modules/pactum/src/models/expect.js:48:10)
+    at Have._validate (/app/node_modules/pactum/src/exports/expect.js:111:26)
+    at Have.headerContains (/app/node_modules/pactum/src/exports/expect.js:24:10)
+    at World.<anonymous> (/app/features/support/oauth_token.js:88:20)]]></failure>
+    <system-out><![CDATA[Given The user wants to receive the id token and access token.............passed
+When The User sends POST request with given "authorization_code" as gra...passed
+Then User receives a response from the POST /oauth/token endpoint.........passed
+And The POST /oauth/token endpoint response should be returned in a tim...passed
+And The POST /oauth/token endpoint response should have status 200........passed
+And The POST /oauth/token response should have "content-type": "applica...failed
+And The POST /oauth/token endpoint response should match json schema.....skipped
+And The POST /oauth/token endpoint response should contain "eyJhbGciOi...skipped]]></system-out>
+  </testcase>
+  <testcase classname="API to create access token" name="The user is not able to receive the ID and access token because of the invalid client_assertion" time="0.004602856999999999">
+    <failure type="FAILED" message="A hook or step failed"><![CDATA[AssertionError [ERR_ASSERTION]: Header value '2137' did not match for header 'content-type': 'application/json; charset=utf-8'
+    at Expect.fail (/app/node_modules/pactum/src/models/expect.js:444:12)
+    at Expect._validateHeaderContains (/app/node_modules/pactum/src/models/expect.js:176:18)
+    at Expect.validate (/app/node_modules/pactum/src/models/expect.js:48:10)
+    at Have._validate (/app/node_modules/pactum/src/exports/expect.js:111:26)
+    at Have.headerContains (/app/node_modules/pactum/src/exports/expect.js:24:10)
+    at World.<anonymous> (/app/features/support/oauth_token.js:88:20)]]></failure>
+    <system-out><![CDATA[When The User sends POST request with given "authorization_code" as gra...passed
+Then User receives a response from the POST /oauth/token endpoint.........passed
+And The POST /oauth/token endpoint response should be returned in a tim...passed
+And The POST /oauth/token endpoint response should have status 400........passed
+And The POST /oauth/token response should have "content-type": "applica...failed
+And The POST /oauth/token endpoint response should match json error sc...skipped
+And The POST /oauth/token endpoint response should contain "invalid_as...skipped]]></system-out>
+  </testcase>
+  <testcase classname="API to create access token" name="The user is not able to receive the ID and access token because of the invalid client_assertion_type" time="0.0046287839999999995">
+    <failure type="FAILED" message="A hook or step failed"><![CDATA[AssertionError [ERR_ASSERTION]: Header value '2137' did not match for header 'content-type': 'application/json; charset=utf-8'
+    at Expect.fail (/app/node_modules/pactum/src/models/expect.js:444:12)
+    at Expect._validateHeaderContains (/app/node_modules/pactum/src/models/expect.js:176:18)
+    at Expect.validate (/app/node_modules/pactum/src/models/expect.js:48:10)
+    at Have._validate (/app/node_modules/pactum/src/exports/expect.js:111:26)
+    at Have.headerContains (/app/node_modules/pactum/src/exports/expect.js:24:10)
+    at World.<anonymous> (/app/features/support/oauth_token.js:88:20)]]></failure>
+    <system-out><![CDATA[Given The user wants to receive the id token and access token.............passed
+When The User sends POST request with given "authorization_code" as gra...passed
+Then User receives a response from the POST /oauth/token endpoint.........passed
+And The POST /oauth/token endpoint response should be returned in a tim...passed
+And The POST /oauth/token endpoint response should have status 400........passed
+And The POST /oauth/token response should have "content-type": "applica...failed
+And The POST /oauth/token endpoint response should match json error sc...skipped
+And The POST /oauth/token endpoint response should contain "invalid_as...skipped]]></system-out>
+  </testcase>
+  <testcase classname="API to create access token" name="The user is not able to receive the ID and access token because of the invalid redirect_uri" time="0.005084370999999999">
+    <failure type="FAILED" message="A hook or step failed"><![CDATA[AssertionError [ERR_ASSERTION]: Header value '2137' did not match for header 'content-type': 'application/json; charset=utf-8'
+    at Expect.fail (/app/node_modules/pactum/src/models/expect.js:444:12)
+    at Expect._validateHeaderContains (/app/node_modules/pactum/src/models/expect.js:176:18)
+    at Expect.validate (/app/node_modules/pactum/src/models/expect.js:48:10)
+    at Have._validate (/app/node_modules/pactum/src/exports/expect.js:111:26)
+    at Have.headerContains (/app/node_modules/pactum/src/exports/expect.js:24:10)
+    at World.<anonymous> (/app/features/support/oauth_token.js:88:20)]]></failure>
+    <system-out><![CDATA[Given The user wants to receive the id token and access token.............passed
+When The User sends POST request with given "authorization_code" as gra...passed
+Then User receives a response from the POST /oauth/token endpoint.........passed
+And The POST /oauth/token endpoint response should be returned in a tim...passed
+And The POST /oauth/token endpoint response should have status 400........passed
+And The POST /oauth/token response should have "content-type": "applica...failed
+And The POST /oauth/token endpoint response should match json error sc...skipped
+And The POST /oauth/token endpoint response should contain "invalid_re...skipped]]></system-out>
+  </testcase>
+  <testcase classname="API to create access token" name="The user is not able to receive the ID and access token because of the invalid input" time="0.005141799">
+    <failure type="FAILED" message="A hook or step failed"><![CDATA[AssertionError [ERR_ASSERTION]: Header value '2137' did not match for header 'content-type': 'application/json; charset=utf-8'
+    at Expect.fail (/app/node_modules/pactum/src/models/expect.js:444:12)
+    at Expect._validateHeaderContains (/app/node_modules/pactum/src/models/expect.js:176:18)
+    at Expect.validate (/app/node_modules/pactum/src/models/expect.js:48:10)
+    at Have._validate (/app/node_modules/pactum/src/exports/expect.js:111:26)
+    at Have.headerContains (/app/node_modules/pactum/src/exports/expect.js:24:10)
+    at World.<anonymous> (/app/features/support/oauth_token.js:88:20)]]></failure>
+    <system-out><![CDATA[Given The user wants to receive the id token and access token.............passed
+When The User sends POST request with given "" as grantType, "" as code...passed
+Then User receives a response from the POST /oauth/token endpoint.........passed
+And The POST /oauth/token endpoint response should be returned in a tim...passed
+And The POST /oauth/token endpoint response should have status 400........passed
+And The POST /oauth/token response should have "content-type": "applica...failed
+And The POST /oauth/token endpoint response should match json error sc...skipped
+And The POST /oauth/token endpoint response should contain "invalid_in...skipped]]></system-out>
+  </testcase>
+  <testcase classname="API to create access token" name="The user is not able to receive the ID and access token because of the empty payload" time="0.0043999239999999995">
+    <failure type="FAILED" message="A hook or step failed"><![CDATA[AssertionError [ERR_ASSERTION]: Header value '2137' did not match for header 'content-type': 'application/json; charset=utf-8'
+    at Expect.fail (/app/node_modules/pactum/src/models/expect.js:444:12)
+    at Expect._validateHeaderContains (/app/node_modules/pactum/src/models/expect.js:176:18)
+    at Expect.validate (/app/node_modules/pactum/src/models/expect.js:48:10)
+    at Have._validate (/app/node_modules/pactum/src/exports/expect.js:111:26)
+    at Have.headerContains (/app/node_modules/pactum/src/exports/expect.js:24:10)
+    at World.<anonymous> (/app/features/support/oauth_token.js:88:20)]]></failure>
+    <system-out><![CDATA[Given The user wants to receive the id token and access token.............passed
+When The User sends POST request without a payload........................passed
+Then User receives a response from the POST /oauth/token endpoint.........passed
+And The POST /oauth/token endpoint response should be returned in a tim...passed
+And The POST /oauth/token endpoint response should have status 400........passed
+And The POST /oauth/token response should have "content-type": "applica...failed
+And The POST /oauth/token endpoint response should match json error sc...skipped
+And The POST /oauth/token endpoint response should contain "invalid_pa...skipped]]></system-out>
+  </testcase>
+  <testcase classname="The authorized endpoint of Open ID Connect (OIDC)." name="Successfully validates the provided query parameters using the OAuth-details endpoint smoke type test" time="0.009951917">
+    <system-out><![CDATA[Given Wants to validate the provided query parameters using the OAuth-d...passed
+When Sends GET request with given "openid profile" as scope, "code" as ...passed
+Then Receives a response from the GET /authorize..........................passed
+And The GET /authorize endpoint response should be returned in a timely...passed
+And The GET /authorize endpoint response should have status 200...........passed]]></system-out>
+  </testcase>
+  <testcase classname="The authorized endpoint of Open ID Connect (OIDC)." name="Successfully validates the provided query parameters using the OAuth-details endpoint" time="0.008436805">
+    <system-out><![CDATA[Given Wants to validate the provided query parameters using the OAuth-d...passed
+When Sends GET request with given "openid" as scope, "code" as response...passed
+Then Receives a response from the GET /authorize..........................passed
+And The GET /authorize endpoint response should be returned in a timely...passed
+And The GET /authorize endpoint response should have status 200...........passed]]></system-out>
+  </testcase>
+  <testcase classname="The authorized endpoint of Open ID Connect (OIDC)." name="Successfully validates the provided query parameters using the OAuth-details endpoint [1]" time="0.009583600999999999">
+    <system-out><![CDATA[Given Wants to validate the provided query parameters using the OAuth-d...passed
+When Sends GET request with given "profile" as scope, "code" as respons...passed
+Then Receives a response from the GET /authorize..........................passed
+And The GET /authorize endpoint response should be returned in a timely...passed
+And The GET /authorize endpoint response should have status 200...........passed]]></system-out>
+  </testcase>
+  <testcase classname="The authorized endpoint of Open ID Connect (OIDC)." name="Successfully validates the provided query parameters using the OAuth-details endpoint [2]" time="0.009218905">
+    <system-out><![CDATA[Given Wants to validate the provided query parameters using the OAuth-d...passed
+When Sends GET request with given "email" as scope, "code" as response_...passed
+Then Receives a response from the GET /authorize..........................passed
+And The GET /authorize endpoint response should be returned in a timely...passed
+And The GET /authorize endpoint response should have status 200...........passed]]></system-out>
+  </testcase>
+  <testcase classname="The authorized endpoint of Open ID Connect (OIDC)." name="Successfully validates the provided query parameters using the OAuth-details endpoint [3]" time="0.006031206">
+    <system-out><![CDATA[Given Wants to validate the provided query parameters using the OAuth-d...passed
+When Sends GET request with given "offline_access" as scope, "code" as ...passed
+Then Receives a response from the GET /authorize..........................passed
+And The GET /authorize endpoint response should be returned in a timely...passed
+And The GET /authorize endpoint response should have status 200...........passed]]></system-out>
+  </testcase>
+  <testcase classname="API to receive user information" name="The user successfully receives user information smoke type test" time="0.014418919000000002">
+    <system-out><![CDATA[Given The user wants to receive user information..........................passed
+Given The id_token is generated before GET /oidc/userinfo with given "a...passed
+When The User sends GET request to receive user information...............passed
+Then User receives a response from the GET /oidc/userinfo endpoint........passed
+And The GET /oidc/userinfo endpoint response should be returned in a ti...passed
+And The GET /oidc/userinfo endpoint response should have status 200.......passed
+And The GET /oidc/userinfo endpoint response should have content-type: ...passed
+And The GET /oidc/userinfo endpoint response should match json schema.....passed]]></system-out>
+  </testcase>
+  <testcase classname="Endpoint to retrieve all the public keys of the IDBB server" name="Successfully retrieves the IDBB server's public keys" time="0.012466880999999999">
+    <system-out><![CDATA[Given Wants to retrieve the IDBB server's public keys.....................passed
+When GET request to retrieve all the public keys of the IDBB server is ...passed
+Then The response from /.well-known/jwks.json endpoint is received........passed
+And The response from /.well-known/jwks.json should be returned in a ti...passed
+And The response from /.well-known/jwks.json should have status 200.......passed
+And The response from /.well-known/jwks.json should have content-type: ...passed
+And The response from /.well-known/jwks.json should match json schema.....passed
+And The combination of kid and kty is distinct for each element in the ...passed]]></system-out>
+  </testcase>
+  <testcase classname="This endpoint is only used to facilitate the OIDC provider details in a standardised manner." name="Successful facilitation of OIDC provider details" time="0.008693764000000001">
+    <system-out><![CDATA[Given Wants to facilitate the OIDC provider details in a standard way.....passed
+When GET request to facilitate the OIDC provider details is sent..........passed
+Then The response from /.well-known/openid-configuration endpoint is re...passed
+And The response from /.well-known/openid-configuration should be retur...passed
+And The response from /.well-known/openid-configuration should have sta...passed
+And The response from /.well-known/openid-configuration should have con...passed
+And The response from /.well-known/openid-configuration should match js...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validate wallet create wallet user id" name="Successfully validates the wallet and generates the wallet user id smoke type test" time="0.005790438999999999">
+    <system-out><![CDATA[Given Wants to validate the wallet and generate wallet user id............passed
+When Send POST /wallet-binding request with given "n3fy2qkg9r7h2" as in...passed
+Then Receive a response from the /wallet-binding endpoint.................passed
+And The /wallet-binding response should be returned in a timely manner ...passed
+And The /wallet-binding endpoint response should have status 200..........passed
+And The /wallet-binding endpoint endpoint response should have content-...passed
+And The /wallet-binding endpoint response should match json schema with...passed
+And The /wallet-binding endpoint response should have authFactorType va...passed
+And The /wallet-binding endpoint response should contain a future expir...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validate wallet create wallet user id" name="Not able to generate the wallet binding because of unsupported challenge format" time="0.009174693999999999">
+    <system-out><![CDATA[Given Wants to validate the wallet and generate wallet user id............passed
+When Send POST /wallet-binding request with given invalid format "n3fy2...passed
+Then Receive a response from the /wallet-binding endpoint.................passed
+And The /wallet-binding response should be returned in a timely manner ...passed
+And The /wallet-binding endpoint response should have status 200..........passed
+And The /wallet-binding endpoint endpoint response should have content-...passed
+And The /wallet-binding endpoint response should match json schema with...passed
+And The /wallet-binding response should contain errorCode property equa...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validate wallet create wallet user id" name="Not able to generate the wallet binding because of invalid public key" time="0.008796161000000002">
+    <system-out><![CDATA[Given Wants to validate the wallet and generate wallet user id............passed
+When Send POST /wallet-binding request with given format "n3fy2qkg9r7h2...passed
+Then Receive a response from the /wallet-binding endpoint.................passed
+And The /wallet-binding response should be returned in a timely manner ...passed
+And The /wallet-binding endpoint response should have status 200..........passed
+And The /wallet-binding endpoint endpoint response should have content-...passed
+And The /wallet-binding endpoint response should match json schema with...passed
+And The /wallet-binding response should contain errorCode property equa...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validate wallet create wallet user id" name="Not able to generate the wallet binding because of duplicated public key" time="0.008881921">
+    <system-out><![CDATA[Given Wants to validate the wallet and generate wallet user id............passed
+When Send POST /wallet-binding request with given "n3fy2qkg9r7h2" as in...passed
+Then Receive a response from the /wallet-binding endpoint.................passed
+When Send POST /wallet-binding request with the same public key as in t...passed
+Then Receive a response from the /wallet-binding endpoint.................passed
+And The /wallet-binding response should be returned in a timely manner ...passed
+And The /wallet-binding endpoint response should have status 200..........passed
+And The /wallet-binding endpoint endpoint response should have content-...passed
+And The /wallet-binding endpoint response should match json schema with...passed
+And The /wallet-binding response should contain errorCode property equa...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validate wallet create wallet user id" name="Not able to generate the wallet binding because of invalid auth challenge" time="0.0052375680000000015">
+    <failure type="FAILED" message="A hook or step failed"><![CDATA[AssertionError: expected [] not to be empty
+    at World.<anonymous> (/app/features/support/wallet_binding.js:158:71)]]></failure>
+    <system-out><![CDATA[Given Wants to validate the wallet and generate wallet user id............passed
+When Send POST /wallet-binding request with given "n3fy2qkg9r7h2" as in...passed
+Then Receive a response from the /wallet-binding endpoint.................passed
+And The /wallet-binding response should be returned in a timely manner ...passed
+And The /wallet-binding endpoint response should have status 200..........passed
+And The /wallet-binding endpoint endpoint response should have content-...passed
+And The /wallet-binding endpoint response should match json schema with...failed
+And The /wallet-binding response should contain errorCode property equ...skipped]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to send the accepted user claims and permitted scopes." name="Successfully sends the accepted user claims and permitted scopes smoke type test" time="0.018431916">
+    <system-out><![CDATA[Given Wants to send the accepted user claims and permitted scopes.........passed
+And The linkedTransactionId is generated before POST /linked-authorizat...passed
+When Send POST /linked-authorization/consent request with given request...passed
+Then Receive a response from the /linked-authorization/consent endpoint...passed
+And The /linked-authorization/consent endpoint response should be retur...passed
+And The /linked-authorization/consent endpoint response should have sta...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to send the accepted user claims and permitted scopes." name="Successfully sends the accepted user claims and permitted scopes" time="0.009084908000000003">
+    <system-out><![CDATA[Given Wants to send the accepted user claims and permitted scopes.........passed
+When Send POST /linked-authorization/consent request with given request...passed
+Then Receive a response from the /linked-authorization/consent endpoint...passed
+And The /linked-authorization/consent endpoint response should be retur...passed
+And The /linked-authorization/consent endpoint response should have sta...passed
+And The /linked-authorization/consent endpoint response should have con...passed
+And The /linked-authorization/consent endpoint response should contain ...passed
+And The /linked-authorization/consent endpoint response should match js...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to send the accepted user claims and permitted scopes." name="Not able to send the accepted user claims and permitted scopes because of invalid linkedTransactionId" time="0.009583908999999998">
+    <system-out><![CDATA[Given Wants to check the correctness of the data..........................passed
+When Send POST /linked-authorization/consent request with given invalid...passed
+Then Receive a response from the /linked-authorization/consent endpoint...passed
+And The /linked-authorization/consent endpoint response should be retur...passed
+And The /linked-authorization/consent endpoint response should have sta...passed
+And The /linked-authorization/consent endpoint response should have con...passed
+And The /linked-authorization/consent endpoint response should match js...passed
+And The /linked-authorization/consent response should contain errorCode...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validates the link-code and its expiry and generates the link auth code." name="Successfully validates the link-code and its expiry and generates the link auth code smoke type test" time="0.026384666999999997">
+    <system-out><![CDATA[Given Wants to validate the link-auth-code and generate the auth code.....passed
+And The link code, transaction and authenticate is completed before POS...passed
+When Send POST /linked-authorization/link-auth-code request with given ...passed
+Then Receive a response from the /linked-authorization/link-auth-code e...passed
+And The /linked-authorization/link-auth-code endpoint response should b...passed
+And The /linked-authorization/link-auth-code endpoint response should h...passed
+And The /linked-authorization/link-auth-code endpoint response should h...passed
+And The /linked-authorization/link-auth-code endpoint response should m...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validates the link-code and its expiry and generates the link auth code." name="Not able to validate the link-code and its expiry and generate the link auth code because of invalid linkCode" time="0.031601401">
+    <system-out><![CDATA[Given Wants to validate the link-auth-code and generate the auth code.....passed
+And The link code, transaction and authenticate is completed before POS...passed
+When Send POST /linked-authorization/link-auth-code request with given ...passed
+Then Receive a response from the /linked-authorization/link-auth-code e...passed
+And The /linked-authorization/link-auth-code endpoint response should b...passed
+And The /linked-authorization/link-auth-code endpoint response should h...passed
+And The /linked-authorization/link-auth-code endpoint response should h...passed
+And The /linked-authorization/link-auth-code endpoint response should m...passed
+And The /linked-authorization/link-auth-code response should contain er...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validates the link-code and its expiry and generates the link auth code." name="Not able to validate the link-code and its expiry and generate the link auth code because of invalid transactionId" time="0.03317163999999999">
+    <system-out><![CDATA[Given Wants to validate the link-auth-code and generate the auth code.....passed
+And The link code, transaction and authenticate is completed before POS...passed
+When Send POST /linked-authorization/link-auth-code request with given ...passed
+Then Receive a response from the /linked-authorization/link-auth-code e...passed
+And The /linked-authorization/link-auth-code endpoint response should b...passed
+And The /linked-authorization/link-auth-code endpoint response should h...passed
+And The /linked-authorization/link-auth-code endpoint response should h...passed
+And The /linked-authorization/link-auth-code endpoint response should m...passed
+And The /linked-authorization/link-auth-code response should contain er...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validates the link-code and its expiry and generates the link auth code." name="Not able to validate the link-code and its expiry and generate the link auth code because of invalid linkCode and transactionId" time="0.026011019">
+    <system-out><![CDATA[Given Wants to validate the link-auth-code and generate the auth code.....passed
+And The link code, transaction and authenticate is completed before POS...passed
+When Send POST /linked-authorization/link-auth-code request with given ...passed
+Then Receive a response from the /linked-authorization/link-auth-code e...passed
+And The /linked-authorization/link-auth-code endpoint response should b...passed
+And The /linked-authorization/link-auth-code endpoint response should h...passed
+And The /linked-authorization/link-auth-code endpoint response should h...passed
+And The /linked-authorization/link-auth-code endpoint response should m...passed
+And The /linked-authorization/link-auth-code response should contain er...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validates the link-code and its expiry and generates the link auth code." name="Not able to validate the link-code and its expiry and generate the link auth code because of invalid requestTime" time="0.03268581200000001">
+    <system-out><![CDATA[Given Wants to validate the link-auth-code and generate the auth code.....passed
+And The link code, transaction and authenticate is completed before POS...passed
+When Send POST /linked-authorization/link-auth-code request with given ...passed
+Then Receive a response from the /linked-authorization/link-auth-code e...passed
+And The /linked-authorization/link-auth-code endpoint response should b...passed
+And The /linked-authorization/link-auth-code endpoint response should h...passed
+And The /linked-authorization/link-auth-code endpoint response should h...passed
+And The /linked-authorization/link-auth-code endpoint response should m...passed
+And The /linked-authorization/link-auth-code response should contain er...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validates the link-code and its expiry and generates the link auth code." name="Not able to validate the link-code and its expiry because of transaction and link code are not connected to each other" time="0.05481541900000002">
+    <system-out><![CDATA[Given Wants to validate the link-auth-code and generate the auth code.....passed
+And The link code, transaction and authenticate is completed before POS...passed
+And The second link code, transaction and authenticate is completed bef...passed
+When Send POST /linked-authorization/link-auth-code request with given ...passed
+Then Receive a response from the /linked-authorization/link-auth-code e...passed
+And The /linked-authorization/link-auth-code endpoint response should b...passed
+And The /linked-authorization/link-auth-code endpoint response should h...passed
+And The /linked-authorization/link-auth-code endpoint response should h...passed
+And The /linked-authorization/link-auth-code endpoint response should m...passed
+And The /linked-authorization/link-auth-code response should contain er...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validates the link-code and its expiry and generates the link auth code." name="Not able to validate the link-code and its expiry because of reuse of the completed transaction_id" time="0.025989008999999997">
+    <system-out><![CDATA[Given Wants to validate the link-auth-code and generate the auth code.....passed
+And The first authorization flow for transactionID ends...................passed
+When Send POST /linked-authorization/link-auth-code request with given ...passed
+Then Receive a response for reuse transactionId from the /linked-author...passed
+And The /linked-authorization/link-auth-code endpoint response for reus...passed
+And The /linked-authorization/link-auth-code endpoint response for reus...passed
+And The /linked-authorization/link-auth-code endpoint response for reus...passed
+And The /linked-authorization/link-auth-code response for reuse transac...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to generate link code." name="Successfully generates link code smoke type test" time="0.006190777000000001">
+    <system-out><![CDATA[Given Wants to generate link code.........................................passed
+When Send POST /linked-authorization/link-code request with given X-XSR...passed
+Then Receive a response from the /linked-authorization/link-code endpoi...passed
+And The /linked-authorization/link-code endpoint response should be ret...passed
+And The /linked-authorization/link-code endpoint response should have s...passed
+And The /linked-authorization/link-code endpoint response should have c...passed
+And The /linked-authorization/link-code endpoint response should match ...passed
+And The /linked-authorization/link-code response should contain transac...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to generate link code." name="Not able to generate link code because of a random transaction_id" time="0.0052245849999999995">
+    <system-out><![CDATA[Given Wants to generate link code.........................................passed
+When Send POST /linked-authorization/link-code request with given X-XSR...passed
+Then Receive a response from the /linked-authorization/link-code endpoi...passed
+And The /linked-authorization/link-code endpoint response should be ret...passed
+And The /linked-authorization/link-code endpoint response should have s...passed
+And The /linked-authorization/link-code endpoint response should have c...passed
+And The /linked-authorization/link-code endpoint response should match ...passed
+And The /linked-authorization/link-code response should contain errorCo...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to generate link code." name="Not able to generate link code because of a blank transaction_id" time="0.0051238839999999996">
+    <system-out><![CDATA[Given Wants to generate link code.........................................passed
+When Send POST /linked-authorization/link-code request with given X-XSR...passed
+Then Receive a response from the /linked-authorization/link-code endpoi...passed
+And The /linked-authorization/link-code endpoint response should be ret...passed
+And The /linked-authorization/link-code endpoint response should have s...passed
+And The /linked-authorization/link-code endpoint response should have c...passed
+And The /linked-authorization/link-code endpoint response should match ...passed
+And The /linked-authorization/link-code response should contain errorCo...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to generate link code." name="Not able to generate link code because of reuse of the completed transaction_id" time="0.027394247999999996">
+    <system-out><![CDATA[Given Wants to generate link code.........................................passed
+And The first authorization flow for transactionId ends...................passed
+When Send POST /linked-authorization/link-code request with given X-XSR...passed
+Then Receive a response for completed transactionId from the /linked-au...passed
+And The /linked-authorization/link-code endpoint response for completed...passed
+And The /linked-authorization/link-code endpoint response for completed...passed
+And The /linked-authorization/link-code endpoint response for completed...passed
+And The /linked-authorization/link-code response for completed transact...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to generate link code." name="Not able to generate link code because of invalid requestTime" time="0.005565697999999999">
+    <system-out><![CDATA[Given Wants to generate link code.........................................passed
+When Send POST /linked-authorization/link-code request with given X-XSR...passed
+Then Receive a response from the /linked-authorization/link-code endpoi...passed
+And The /linked-authorization/link-code endpoint response should be ret...passed
+And The /linked-authorization/link-code endpoint response should have s...passed
+And The /linked-authorization/link-code endpoint response should have c...passed
+And The /linked-authorization/link-code endpoint response should match ...passed
+And The /linked-authorization/link-code response should contain errorCo...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to generate link code." name="Not able to generate link code because of invalid xsrf token" time="0.006055809">
+    <system-out><![CDATA[Given Wants to generate link code.........................................passed
+When Send POST /linked-authorization/link-code request with given inval...passed
+Then Receive a response from the /linked-authorization/link-code endpoi...passed
+And The /linked-authorization/link-code endpoint response should be ret...passed
+And The /linked-authorization/link-code endpoint response should have s...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to checks the status of link code." name="Successfully checks the status of link code smoke type test" time="0.009589025999999999">
+    <system-out><![CDATA[Given Wants to check the status of link code..............................passed
+And The link code is generated............................................passed
+When Send POST /linked-authorization/link-status request with given X-X...passed
+Then Receive a response from the /linked-authorization/link-status endp...passed
+And The /linked-authorization/link-status endpoint response should be r...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should matc...passed
+And The /linked-authorization/link-status response should contain trans...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to checks the status of link code." name="Not able to check the status of link code because of the blank transactionId" time="0.009167005">
+    <system-out><![CDATA[Given Wants to check the status of link code..............................passed
+When Send POST /linked-authorization/link-status request with given X-X...passed
+Then Receive a response from the /linked-authorization/link-status endp...passed
+And The /linked-authorization/link-status endpoint response should be r...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should matc...passed
+And The /linked-authorization/link-status response should contain error...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to checks the status of link code." name="Not able to check the status of link code because of the random transactionId" time="0.0045892250000000015">
+    <system-out><![CDATA[Given Wants to check the status of link code..............................passed
+When Send POST /linked-authorization/link-status request with given X-X...passed
+Then Receive a response from the /linked-authorization/link-status endp...passed
+And The /linked-authorization/link-status endpoint response should be r...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should matc...passed
+And The /linked-authorization/link-status response should contain error...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to checks the status of link code." name="Not able to check the status of link code because of the completed transactionId" time="0.027428901000000002">
+    <system-out><![CDATA[Given Wants to check the status of link code..............................passed
+When Send POST /linked-authorization/link-status request with given X-X...passed
+Then Receive a response from the /linked-authorization/link-status endp...passed
+And The /linked-authorization/link-status endpoint response should be r...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should matc...passed
+And The /linked-authorization/link-status response should contain error...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to checks the status of link code." name="Not able to check the status of link code because of the random linkCode" time="0.004158446">
+    <system-out><![CDATA[Given Wants to check the status of link code..............................passed
+When Send POST /linked-authorization/link-status request with given X-X...passed
+Then Receive a response from the /linked-authorization/link-status endp...passed
+And The /linked-authorization/link-status endpoint response should be r...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should matc...passed
+And The /linked-authorization/link-status response should contain error...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to checks the status of link code." name="Not able to check the status of link code because of the blank linkCode" time="0.005390145000000001">
+    <system-out><![CDATA[Given Wants to check the status of link code..............................passed
+When Send POST /linked-authorization/link-status request with given X-X...passed
+Then Receive a response from the /linked-authorization/link-status endp...passed
+And The /linked-authorization/link-status endpoint response should be r...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should matc...passed
+And The /linked-authorization/link-status response should contain error...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to checks the status of link code." name="Not able to check the status of link code because of the link code connected to a different transaction id" time="0.013287426999999997">
+    <system-out><![CDATA[Given Wants to check the status of link code..............................passed
+And The link code is generated............................................passed
+And The second link code for diffrent transaction id is generated.........passed
+When Send POST /linked-authorization/link-status request with given X-X...passed
+Then Receive a response from the /linked-authorization/link-status endp...passed
+And The /linked-authorization/link-status endpoint response should be r...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should have...passed
+And The /linked-authorization/link-status endpoint response should matc...passed
+And The /linked-authorization/link-status response should contain error...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validates the link-code and its expiry and generates the linkTransactionId." name="Successfully validates the link-code and its expiry and generates the linkTransactionId smoke type test" time="0.014775629000000002">
+    <system-out><![CDATA[Given Wants to validate the link-code and its expiry and generate the l...passed
+And The link code is generated before POST /linked-authorization/link-t...passed
+When Send POST /linked-authorization/link-transaction request with give...passed
+Then Receive a response from the /linked-authorization/link-transaction...passed
+And The /linked-authorization/link-transaction endpoint response should...passed
+And The /linked-authorization/link-transaction endpoint response should...passed
+And The /linked-authorization/link-transaction endpoint response should...passed
+And The /linked-authorization/link-transaction endpoint response should...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validates the link-code and its expiry and generates the linkTransactionId." name="Not able to validate the link-code and its expiry and generate the linkTransactionId because of invalid linkCode" time="0.012808443000000001">
+    <system-out><![CDATA[Given Wants to validate the link-code and its expiry and generate the l...passed
+When Send POST /linked-authorization/link-transaction request with give...passed
+Then Receive a response from the /linked-authorization/link-transaction...passed
+And The /linked-authorization/link-transaction endpoint response should...passed
+And The /linked-authorization/link-transaction endpoint response should...passed
+And The /linked-authorization/link-transaction endpoint response should...passed
+And The /linked-authorization/link-transaction endpoint response should...passed
+And The /linked-authorization/link-transaction response should contain ...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to validates the link-code and its expiry and generates the linkTransactionId." name="Not able to validate the link-code and its expiry and generate the linkTransactionId because of expired linkCode" time="30.033538959">
+    <system-out><![CDATA[Given Wants to validate the link-code and its expiry and generate the l...passed
+And The link code is generated before POST /linked-authorization/link-t...passed
+When Send POST /linked-authorization/link-transaction request with give...passed
+Then Receive a response from the /linked-authorization/link-transaction...passed
+And The /linked-authorization/link-transaction endpoint response should...passed
+And The /linked-authorization/link-transaction endpoint response should...passed
+And The /linked-authorization/link-transaction endpoint response should...passed
+And The /linked-authorization/link-transaction endpoint response should...passed
+And The /linked-authorization/link-transaction response should contain ...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to check the correctness of the data." name="Successfully checks the correctness of the data smoke type test" time="0.016641349">
+    <system-out><![CDATA[Given Wants to check the correctness of the data..........................passed
+And The link code is generated before POST /linked-authorization/authen...passed
+When Send POST /linked-authorization/authenticate request with given re...passed
+Then Receive a response from the /linked-authorization/authenticate end...passed
+And The /linked-authorization/authenticate endpoint response should be ...passed
+And The /linked-authorization/authenticate endpoint response should hav...passed
+And The /linked-authorization/authenticate endpoint response should hav...passed
+And The /linked-authorization/authenticate endpoint response linkedTran...passed
+And The /linked-authorization/authenticate endpoint response should mat...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to check the correctness of the data." name="Not able to check the correctness of the data because of reused link code" time="0.006526034000000001">
+    <system-out><![CDATA[Given Wants to check the correctness of the data..........................passed
+When Try to authenticate reusing link code................................passed
+And Receive a response from the /linked-authorization/authenticate endp...passed
+And The /linked-authorization/authenticate endpoint response for reused...passed
+And The /linked-authorization/authenticate endpoint response for reused...passed
+And The /linked-authorization/authenticate endpoint response for reused...passed
+And The /linked-authorization/authenticate endpoint response for reused...passed
+And The /linked-authorization/authenticate response for reused link cod...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to check the correctness of the data." name="Not able to check the correctness of the data because of an invalid linkedTransactionId" time="0.004833397">
+    <system-out><![CDATA[Given Wants to check the correctness of the data..........................passed
+When Send POST /linked-authorization/authenticate request with given in...passed
+Then Receive a response from the /linked-authorization/authenticate end...passed
+And The /linked-authorization/authenticate endpoint response should be ...passed
+And The /linked-authorization/authenticate endpoint response should hav...passed
+And The /linked-authorization/authenticate endpoint response should hav...passed
+And The /linked-authorization/authenticate endpoint response should mat...passed
+And The /linked-authorization/authenticate response should contain erro...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to check the correctness of the data." name="Not able to check the correctness of the data because of an invalid individualId" time="0.004861814000000001">
+    <system-out><![CDATA[Given Wants to check the correctness of the data..........................passed
+When Send POST /linked-authorization/authenticate request with given in...passed
+Then Receive a response from the /linked-authorization/authenticate end...passed
+And The /linked-authorization/authenticate endpoint response should be ...passed
+And The /linked-authorization/authenticate endpoint response should hav...passed
+And The /linked-authorization/authenticate endpoint response should hav...passed
+And The /linked-authorization/authenticate endpoint response should mat...passed
+And The /linked-authorization/authenticate response should contain erro...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to check the correctness of the data." name="Not able to check the correctness of the data because of an invalid challengeList" time="0.004789779000000001">
+    <system-out><![CDATA[Given Wants to check the correctness of the data..........................passed
+When Send POST /linked-authorization/authenticate request with given in...passed
+Then Receive a response from the /linked-authorization/authenticate end...passed
+And The /linked-authorization/authenticate endpoint response should be ...passed
+And The /linked-authorization/authenticate endpoint response should hav...passed
+And The /linked-authorization/authenticate endpoint response should hav...passed
+And The /linked-authorization/authenticate endpoint response should mat...passed
+And The /linked-authorization/authenticate response should contain erro...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to check the correctness of the data." name="Not able to check the correctness of the data because of invalid requestTime" time="0.013672138">
+    <system-out><![CDATA[Given Wants to check the correctness of the data..........................passed
+And The link code is generated before POST /linked-authorization/authen...passed
+When Send POST /linked-authorization/authenticate request with given in...passed
+Then Receive a response from the /linked-authorization/authenticate end...passed
+And The /linked-authorization/authenticate endpoint response should be ...passed
+And The /linked-authorization/authenticate endpoint response should hav...passed
+And The /linked-authorization/authenticate endpoint response should hav...passed
+And The /linked-authorization/authenticate endpoint response should mat...passed
+And The /linked-authorization/authenticate response should contain erro...passed]]></system-out>
+  </testcase>
+  <testcase classname="The endpoint to check the correctness of the data." name="Not able to check the correctness of the data because auth failed" time="0.015356245">
+    <system-out><![CDATA[Given Wants to check the correctness of the data..........................passed
+And The link code is generated before POST /linked-authorization/authen...passed
+When Send POST /linked-authorization/authenticate request with given re...passed
+Then Receive a response from the /linked-authorization/authenticate end...passed
+And The /linked-authorization/authenticate endpoint response should be ...passed
+And The /linked-authorization/authenticate endpoint response should hav...passed
+And The /linked-authorization/authenticate endpoint response should hav...passed
+And The /linked-authorization/authenticate endpoint response should mat...passed
+And The /linked-authorization/authenticate response should contain erro...passed]]></system-out>
+  </testcase>
+</testsuite>
