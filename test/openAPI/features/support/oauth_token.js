@@ -81,11 +81,11 @@ Then(/^The POST \/oauth\/token endpoint response should have status (\d+)$/,
     (status) => specOAuthToken.response().to.have.status(status)
 );
 
-Then(/^The POST \/oauth\/token endpoint response should have content\-type: application\/json header$/,
-  () =>
+Then(/^The POST \/oauth\/token response should have "([^"]*)": "([^"]*)" header$/,
+  (key, value) =>
     specOAuthToken
       .response()
-      .should.have.header(contentTypeHeader.key, contentTypeHeader.value)
+      .should.have.headerContains(key, "sample_wrong_content_type")
 );
 
 Then(/^The POST \/oauth\/token endpoint response should match json schema$/,

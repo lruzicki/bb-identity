@@ -8,7 +8,7 @@ Feature: API to create access token
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 200
-    And The POST /oauth/token endpoint response should have content-type: application/json header
+    And The POST /oauth/token response should have "content-type": "application/json" header
     And The POST /oauth/token endpoint response should match json schema
     And The POST /oauth/token endpoint response should contain "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9" as idToken
 
@@ -19,7 +19,7 @@ Feature: API to create access token
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 200
-    And The POST /oauth/token endpoint response should have content-type: application/json header
+    And The POST /oauth/token response should have "content-type": "application/json" header
     And The POST /oauth/token endpoint response should match json schema
     And The POST /oauth/token endpoint response should contain "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9" as idToken
 
@@ -35,7 +35,7 @@ Feature: API to create access token
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 400
-    And The POST /oauth/token endpoint response should have content-type: application/json header
+    And The POST /oauth/token response should have "content-type": "application/json" header
     And The POST /oauth/token endpoint response should match json error schema
     And The POST /oauth/token endpoint response should contain "invalid_assertion" as errorType
 
@@ -45,7 +45,7 @@ Feature: API to create access token
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 400
-    And The POST /oauth/token endpoint response should have content-type: application/json header
+    And The POST /oauth/token response should have "content-type": "application/json" header
     And The POST /oauth/token endpoint response should match json error schema
     And The POST /oauth/token endpoint response should contain "invalid_assertion_type" as errorType
 
@@ -55,7 +55,7 @@ Feature: API to create access token
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 400
-    And The POST /oauth/token endpoint response should have content-type: application/json header
+    And The POST /oauth/token response should have "content-type": "application/json" header
     And The POST /oauth/token endpoint response should match json error schema
     And The POST /oauth/token endpoint response should contain "invalid_redirect_uri" as errorType
 
@@ -65,7 +65,7 @@ Feature: API to create access token
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 400
-    And The POST /oauth/token endpoint response should have content-type: application/json header
+    And The POST /oauth/token response should have "content-type": "application/json" header
     And The POST /oauth/token endpoint response should match json error schema
     And The POST /oauth/token endpoint response should contain "invalid_input" as errorType
 
@@ -75,6 +75,6 @@ Feature: API to create access token
     Then User receives a response from the POST /oauth/token endpoint
     And The POST /oauth/token endpoint response should be returned in a timely manner 15000ms
     And The POST /oauth/token endpoint response should have status 400
-    And The POST /oauth/token endpoint response should have content-type: application/json header
+    And The POST /oauth/token response should have "content-type": "application/json" header
     And The POST /oauth/token endpoint response should match json error schema
     And The POST /oauth/token endpoint response should contain "invalid_payload" as errorType
