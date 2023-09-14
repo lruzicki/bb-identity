@@ -88,7 +88,7 @@ Then(/^The POST \/oauth\/token response should have "([^"]*)": "([^"]*)" header$
   (key, value) =>
     specOAuthToken
       .response()
-      .should.have.headerContains(key, "sample_wrong_content_type")
+      .should.have.headerContains(key, value)
 );
 
 Then(/^The POST \/oauth\/token endpoint response should match json schema$/,
