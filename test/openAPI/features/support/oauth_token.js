@@ -116,7 +116,6 @@ When(
     contentType,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withHeaders('content-type', contentType)
       .withJson({
         grant_type: grantType,
         client_assertion_type: clientAssertionType,
@@ -124,7 +123,8 @@ When(
         client_id: clientId,
         code: code,
         redirect_uri: redirectUri,
-      })
+      });
+    httpClient.setHeader('content-type', contentType);
   });
 
 Then(/^The POST \/oauth\/token endpoint response should match json error schema$/,
@@ -154,7 +154,6 @@ When(
     contentType,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withHeaders('content-type', contentType)
       .withJson({
         grant_type: grantType,
         client_assertion_type: null,
@@ -162,7 +161,8 @@ When(
         client_id: clientId,
         code: code,
         redirect_uri: redirectUri,
-      })
+      });
+    httpClient.setHeader('content-type', contentType);
   });
 
 
@@ -179,7 +179,6 @@ When(
     contentType,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withHeader('content-type', contentType)
       .withJson({
         grant_type: grantType,
         client_assertion_type: clientAssertionType,
@@ -187,7 +186,8 @@ When(
         client_id: clientId,
         code: code,
         redirect_uri: null,
-      })
+      });
+    httpClient.setHeader('content-type', contentType);
   });
 
 
@@ -205,7 +205,6 @@ When(
     contentType,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withHeaders('content-type', contentType)
       .withJson({
         grant_type: grantType,
         client_assertion_type: clientAssertionType,
@@ -213,7 +212,8 @@ When(
         client_id: clientId,
         code: code,
         redirect_uri: redirectUri,
-      })
+      });
+    httpClient.setHeader('content-type', contentType);
   });
 
 
