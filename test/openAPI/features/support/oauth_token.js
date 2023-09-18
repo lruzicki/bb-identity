@@ -34,7 +34,7 @@ Given(/^The user wants to receive the id token and access token$/,
 );
 
 Given(
-  /^The User sends POST request with given "([^"]*)" as grantType, "([^"]*)" as code, "([^"]*)" as clientId, "([^"]*)" as clientAssertionType, "([^"]*)" as clientAssertion, "([^"]*)" as redirectUri, "([^"]*)" as iss, "([^"]*)" as sub, "([^"]*)" as aud, (\d+) as exp, (\d+) as iat, "([^"]*)" as contentType$/,
+  /^The User sends POST request with given "([^"]*)" as grantType, "([^"]*)" as code, "([^"]*)" as clientId, "([^"]*)" as clientAssertionType, "([^"]*)" as clientAssertion, "([^"]*)" as redirectUri, "([^"]*)" as iss, "([^"]*)" as sub, "([^"]*)" as aud, (\d+) as exp, (\d+) as iat, "([^"]*)": "([^"]*)" header$/,
   (
     grantType,
     code,
@@ -47,10 +47,14 @@ Given(
     aud,
     exp,
     iat,
-    contentType,
+    contentTypeKey,
+    contentTypeValue,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withJson({
+      .withHeaders({
+        contentTypeKey: contentTypeValue
+      })
+      .withForm({
         grant_type: grantType,
         client_assertion_type: clientAssertionType,
         client_assertion:
@@ -106,20 +110,23 @@ Then(/^The POST \/oauth\/token endpoint response should contain "([^"]*)" as idT
 // Scenario: The user is not able to receive the ID and access token because of the invalid client_assertion
 // Given for this scenario are written in the aforementioned example
 When(
-  /^The User sends POST request with given "([^"]*)" as grantType, "([^"]*)" as code, "([^"]*)" as clientId, "([^"]*)" as clientAssertionType, "([^"]*)" as redirectUri, "([^"]*)" as contentType$/,
+  /^The User sends POST request with given "([^"]*)" as grantType, "([^"]*)" as code, "([^"]*)" as clientId, "([^"]*)" as clientAssertionType, "([^"]*)" as redirectUri, "([^"]*)": "([^"]*)" header$/,
   (
     grantType,
     code,
     clientId,
     clientAssertionType,
     redirectUri,
-    contentType,
+    contentTypeKey,
+    contentTypeValue,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withJson({
+      .withHeaders({
+        contentTypeKey: contentTypeValue
+      })
+      .withForm({
         grant_type: grantType,
         client_assertion_type: clientAssertionType,
-        client_assertion: null,
         client_id: clientId,
         code: code,
         redirect_uri: redirectUri,
@@ -127,9 +134,11 @@ When(
   });
 
 Then(/^The POST \/oauth\/token endpoint response should match json error schema$/,
-  () => chai
-    .expect(specOAuthToken._response.json)
-    .to.be.jsonSchema(oauthTokenErrorResponse)
+  () => {
+    chai
+      .expect(specOAuthToken._response.json)
+      .to.be.jsonSchema(oauthTokenErrorResponse)
+  }
 );
 
 Then(
@@ -143,57 +152,61 @@ Then(
 // Scenario: The user is not able to receive the ID and access token because of the invalid client_assertion_type
 // Given, Then for this scenario are written in the aforementioned example
 When(
-  /^The User sends POST request with given "([^"]*)" as grantType, "([^"]*)" as code, "([^"]*)" as clientId, "([^"]*)" as clientAssertion, "([^"]*)" as redirectUri, "([^"]*)" as contentType$/,
+  /^The User sends POST request with given "([^"]*)" as grantType, "([^"]*)" as code, "([^"]*)" as clientId, "([^"]*)" as clientAssertion, "([^"]*)" as redirectUri, "([^"]*)": "([^"]*)" header$/,
   (
     grantType,
     code,
     clientId,
     clientAssertion,
     redirectUri,
-    contentType,
+    contentTypeKey,
+    contentTypeValue,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withHeaders('Content-Type', contentType)
-      .withJson({
-        grant_type: grantType,
-        client_assertion_type: null,
-        client_assertion: clientAssertion,
-        client_id: clientId,
-        code: code,
-        redirect_uri: redirectUri,
-      })
+    .withHeaders({
+      contentTypeKey: contentTypeValue
+    })
+    .withForm({
+      grant_type: grantType,
+      client_assertion: clientAssertion,
+      client_id: clientId,
+      code: code,
+      redirect_uri: redirectUri,
+    })
   });
 
 
 // Scenario: The user is not able to receive the ID and access token because of the invalid redirect_uri
 // Given, Then for this scenario are written in the aforementioned example
 When(
-  /^The User sends POST request with given "([^"]*)" as grantType, "([^"]*)" as code, "([^"]*)" as clientId, "([^"]*)" as clientAssertionType, "([^"]*)" as clientAssertion, "([^"]*)" as contentType$/,
+  /^The User sends POST request with given "([^"]*)" as grantType, "([^"]*)" as code, "([^"]*)" as clientId, "([^"]*)" as clientAssertionType, "([^"]*)" as clientAssertion, "([^"]*)": "([^"]*)" header$/,
   (
     grantType,
     code,
     clientId,
     clientAssertion,
     clientAssertionType,
-    contentType,
+    contentTypeKey,
+    contentTypeValue,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withHeader('content-type', contentType)
-      .withJson({
-        grant_type: grantType,
-        client_assertion_type: clientAssertionType,
-        client_assertion: clientAssertion,
-        client_id: clientId,
-        code: code,
-        redirect_uri: null,
-      })
+    .withHeaders({
+      contentTypeKey: contentTypeValue
+    })
+    .withForm({
+      grant_type: grantType,
+      client_assertion_type: clientAssertionType,
+      client_assertion: clientAssertion,
+      client_id: clientId,
+      code: code,
+    })
   });
 
 
 // Scenario: The user is not able to receive the ID and access token because of the invalid input
 // Given, Then for this scenario are written in the aforementioned example
 When(
-  /^The User sends POST request with given "([^"]*)" as grantType, "([^"]*)" as code, "([^"]*)" as clientId, "([^"]*)" as clientAssertionType, "([^"]*)" as clientAssertion, "([^"]*)" as redirectUri, "([^"]*)" as contentType$/,
+  /^The User sends POST request with given "([^"]*)" as grantType, "([^"]*)" as code, "([^"]*)" as clientId, "([^"]*)" as clientAssertionType, "([^"]*)" as clientAssertion, "([^"]*)" as redirectUri, "([^"]*)": "([^"]*)" header$/,
   (
     grantType,
     code,
@@ -201,18 +214,21 @@ When(
     clientAssertion,
     clientAssertionType,
     redirectUri,
-    contentType,
+    contentTypeKey,
+    contentTypeValue,
   ) => {
     specOAuthToken.post(baseUrl)
-      .withHeaders('content-type', contentType)
-      .withJson({
-        grant_type: grantType,
-        client_assertion_type: clientAssertionType,
-        client_assertion: clientAssertion,
-        client_id: clientId,
-        code: code,
-        redirect_uri: redirectUri,
-      })
+    .withHeaders({
+      contentTypeKey: contentTypeValue
+    })
+    .withForm({
+      grant_type: grantType,
+      client_assertion_type: clientAssertionType,
+      client_assertion: clientAssertion,
+      client_id: clientId,
+      code: code,
+      redirect_uri: redirectUri,
+    })
   });
 
 
