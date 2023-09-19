@@ -107,6 +107,27 @@ Then(/^The POST \/oauth\/token endpoint response should contain "([^"]*)" as idT
       .to.be.equal(idToken);
   });
 
+Then(/^The POST \/oauth\/token endpoint response should contain "([^"]*)" as accessToken$/,
+  (accessToken) => {
+    chai
+      .expect(specOAuthToken._response.json.access_token)
+      .to.be.equal(accessToken);
+  });
+
+Then(/^The POST \/oauth\/token endpoint response should contain "([^"]*)" as tokenType$/,
+  (tokenType) => {
+    chai
+      .expect(specOAuthToken._response.json.token_type)
+      .to.be.equal(tokenType);
+  });
+
+Then(/^The POST \/oauth\/token endpoint response should contain (\d+) as expiresIn$/,
+  (expiresIn) => {
+    chai
+      .expect(specOAuthToken._response.json.expires_in)
+      .to.be.equal(expiresIn);
+  });
+
 // Scenario: The user is not able to receive the ID and access token because of the invalid client_assertion
 // Given for this scenario are written in the aforementioned example
 When(
@@ -163,16 +184,16 @@ When(
     contentTypeValue,
   ) => {
     specOAuthToken.post(baseUrl)
-    .withHeaders({
-      contentTypeKey: contentTypeValue
-    })
-    .withForm({
-      grant_type: grantType,
-      client_assertion: clientAssertion,
-      client_id: clientId,
-      code: code,
-      redirect_uri: redirectUri,
-    })
+      .withHeaders({
+        contentTypeKey: contentTypeValue
+      })
+      .withForm({
+        grant_type: grantType,
+        client_assertion: clientAssertion,
+        client_id: clientId,
+        code: code,
+        redirect_uri: redirectUri,
+      })
   });
 
 
@@ -190,16 +211,16 @@ When(
     contentTypeValue,
   ) => {
     specOAuthToken.post(baseUrl)
-    .withHeaders({
-      contentTypeKey: contentTypeValue
-    })
-    .withForm({
-      grant_type: grantType,
-      client_assertion_type: clientAssertionType,
-      client_assertion: clientAssertion,
-      client_id: clientId,
-      code: code,
-    })
+      .withHeaders({
+        contentTypeKey: contentTypeValue
+      })
+      .withForm({
+        grant_type: grantType,
+        client_assertion_type: clientAssertionType,
+        client_assertion: clientAssertion,
+        client_id: clientId,
+        code: code,
+      })
   });
 
 
@@ -218,17 +239,17 @@ When(
     contentTypeValue,
   ) => {
     specOAuthToken.post(baseUrl)
-    .withHeaders({
-      contentTypeKey: contentTypeValue
-    })
-    .withForm({
-      grant_type: grantType,
-      client_assertion_type: clientAssertionType,
-      client_assertion: clientAssertion,
-      client_id: clientId,
-      code: code,
-      redirect_uri: redirectUri,
-    })
+      .withHeaders({
+        contentTypeKey: contentTypeValue
+      })
+      .withForm({
+        grant_type: grantType,
+        client_assertion_type: clientAssertionType,
+        client_assertion: clientAssertion,
+        client_id: clientId,
+        code: code,
+        redirect_uri: redirectUri,
+      })
   });
 
 
