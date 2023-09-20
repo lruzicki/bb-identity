@@ -1,6 +1,6 @@
 {
-  "uuid": "256918d8-70c9-4e45-ad37-a6cb1a3f39f7",
-  "lastMigration": 27,
+  "uuid": "ee6b915a-9bcf-4365-8e8c-8e405901e4b0",
+  "lastMigration": 28,
   "name": "BB-Identity",
   "endpointPrefix": "",
   "latency": 0,
@@ -8,13 +8,13 @@
   "hostname": "",
   "routes": [
     {
-      "uuid": "f90e90b4-866f-478f-b34c-a358d8196f01",
+      "uuid": "618fb22f-4fb4-48f8-b5dd-ba2c8f4ebd76",
       "documentation": "API to update existing Open ID Connect (OIDC) client.",
       "method": "put",
       "endpoint": "client-mgmt/oidc-client/:client_id",
       "responses": [
         {
-          "uuid": "1278a74d-ef8f-4cec-9bf6-04f1cfd7d4f9",
+          "uuid": "efbaf56d-5976-4a18-9849-eb4bdc3c845f",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{urlParam 'client_id'}}\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -111,10 +111,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         },
         {
-          "uuid": "5b5025eb-a4ca-4a4f-b0ee-3b7e866eb071",
+          "uuid": "52204aca-343e-4c71-bc46-88091d85dfde",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{urlParam 'client_id'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_grant_type\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -141,10 +142,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "ced4ac69-586c-4de8-9a68-e69bb211cc08",
+          "uuid": "2645f555-aa2f-462d-8535-8457fbceb9eb",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{urlParam 'client_id'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_client_auth\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -171,10 +173,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "e0c2302f-b052-4d47-bd18-40d5af822ab1",
+          "uuid": "8699f59d-0c88-432d-94c1-394180e4b890",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{urlParam 'client_id'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_claim\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -201,10 +204,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "704d8a1a-8517-4d16-aa10-13cf76758be3",
+          "uuid": "74d9d0db-fc8b-4657-bcc6-41dd11c14e32",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{urlParam 'client_id'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_acr\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -231,10 +235,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "f331b6df-0f53-4dad-931c-cfde3854dea2",
+          "uuid": "33e3843f-5b99-422f-bdbd-e1f70acd3718",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{urlParam 'client_id'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_redirect_uri\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -261,10 +266,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "6a9cad88-8010-4bc7-95b6-8bfeabc8f4f8",
+          "uuid": "fc26dde9-cb32-4161-a425-5ebfd4a50f56",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{urlParam 'client_id'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_uri\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -291,10 +297,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "86136758-01a8-402f-8897-3d647c305c20",
+          "uuid": "722b1a6d-af3d-47d6-96ed-9a94fe6b42b3",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{urlParam 'client_id'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_client_name\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -321,10 +328,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "bf45f01a-d052-430c-8a88-ea4524b29f69",
+          "uuid": "502ea07a-3187-4825-9650-40a379798f28",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{urlParam 'client_id'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_client_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -365,7 +373,8 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
@@ -373,13 +382,13 @@
       "type": "http"
     },
     {
-      "uuid": "91963d01-81ab-4fdd-8b43-9a08652e6173",
+      "uuid": "be9d693c-3a01-4184-b107-88de10e52847",
       "documentation": "The authorize endpoint of Open ID Connect (OIDC)",
       "method": "get",
       "endpoint": "authorize",
       "responses": [
         {
-          "uuid": "7fcecddc-a8e7-41f9-b59b-43933a64efaf",
+          "uuid": "897e5b31-dbf8-4956-9de6-467e46c9b053",
           "body": "",
           "latency": 0,
           "statusCode": 200,
@@ -450,7 +459,8 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
@@ -458,13 +468,13 @@
       "type": "http"
     },
     {
-      "uuid": "45bd6c8d-c23c-42dd-9a73-51e98c7d7588",
+      "uuid": "bc48b183-383f-41eb-999d-fe540017575e",
       "documentation": "API to add new open ID connect (OIDC) clients,",
       "method": "post",
       "endpoint": "client-mgmt/oidc-client",
       "responses": [
         {
-          "uuid": "94eea743-3d4c-4561-ab0d-7f7486afa20d",
+          "uuid": "b0f4cf2e-d175-459d-b671-3723c245aa49",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{bodyRaw 'request.clientId'}}\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -568,10 +578,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         },
         {
-          "uuid": "03b23315-afa8-48cc-87a1-6d8630c0cea8",
+          "uuid": "0767870e-9093-4b7e-bfc7-4cdac55ea1ba",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{bodyRaw 'request.clientId'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_public_key\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -598,10 +609,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "468fc7ee-0274-4d38-8972-b54f6f4d74c0",
+          "uuid": "461b7c5e-8c17-499d-81eb-92ea716bfc33",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_request\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -628,10 +640,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "12c0867b-96ff-49e9-a990-a33757dd29d3",
+          "uuid": "909ac7bc-63fc-4bd5-a1fa-70c12bdf433c",
           "body": "{\n  \"responseTime\": \"string\",\n  \"errors\": [\n    {\n      \"errorCode\": \"duplicate_client_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -658,10 +671,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "d28c8c16-0ecc-4632-84ad-7c91b157f7b5",
+          "uuid": "4fe77cd2-ea97-428c-8f58-4232fe7df8cc",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{bodyRaw 'request.clientId'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_redirect_uri\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -688,10 +702,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "1ea64ae0-7339-480d-9410-b2d23c05341e",
+          "uuid": "47889259-2514-406c-af2f-9b1bcb826574",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{bodyRaw 'request.clientId'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_client_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -725,10 +740,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "5b12b1cf-c4a7-4056-8758-d18165cdcc0d",
+          "uuid": "fdd01fac-7745-47e5-b207-f73ad092c7b3",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{bodyRaw 'request.clientId'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_client_name\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -762,10 +778,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "36870a8b-e550-4cc1-9f01-a335a19c79f9",
+          "uuid": "31ed4032-9ae1-4b1f-911a-e6a5c6a61577",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{bodyRaw 'request.clientId'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_rp_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -799,10 +816,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "0cd71796-8114-43c7-8434-084f9115a056",
+          "uuid": "650d604e-ddad-4e47-a9dc-ec82b22cae5b",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{bodyRaw 'request.clientId'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_uri\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -836,10 +854,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "976858a2-b81b-4b0d-92dc-c6ebc508270f",
+          "uuid": "0350c8b3-7c2f-4e88-a8cd-0ac6b8a114b4",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{bodyRaw 'request.clientId'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_client_auth\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -873,10 +892,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "1594eecf-78eb-40eb-ab33-8e7e0e2a19cb",
+          "uuid": "02cb8937-e503-49c5-a301-db51d3c1bb04",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{bodyRaw 'request.clientId'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_grant_type\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -910,10 +930,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "9d88d26b-4db0-450b-86b8-b6b183f44af3",
+          "uuid": "742483c8-c8ce-4adc-ac68-ddb9ca1eae51",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{bodyRaw 'request.clientId'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_claim\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -947,10 +968,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "44e3a0d2-dc37-4d97-a8dd-3b996fa3d7e7",
+          "uuid": "38ee21f4-ee49-4e3e-b403-31efbdfa275d",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{bodyRaw 'request.clientId'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_acr\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -984,10 +1006,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "7d8f0305-baba-476e-8906-a001b862c0af",
+          "uuid": "6ada8a97-2c6b-4d42-a6b1-e08452636bca",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"clientId\": \"{{bodyRaw 'request.clientId'}}\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_request\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1021,7 +1044,8 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
@@ -1029,14 +1053,14 @@
       "type": "http"
     },
     {
-      "uuid": "fe5ca74b-beea-400b-b9d4-057370aeb705",
+      "uuid": "52032d59-837b-4eb0-99b3-2ea11a19401b",
       "type": "http",
       "documentation": "Generate Link code",
       "method": "post",
       "endpoint": "linked-authorization/link-code",
       "responses": [
         {
-          "uuid": "790ecc3c-e3c6-4c1e-99c0-428d8fb218e5",
+          "uuid": "7b857de2-0924-46ec-ae20-d32bab689c81",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkCode\": \"linkCodeToBeExpired\",\n    \"expireDateTime\": \"2023-10-05T14:49:00.000Z\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1077,10 +1101,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         },
         {
-          "uuid": "0334052c-1a00-4c40-a21e-cdd38240590b",
+          "uuid": "e0c3d9b8-52f3-4fcb-80f0-c41a19070a2f",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkCode\": \"linkCode003\",\n    \"expireDateTime\": \"2023-10-05T14:49:00.000Z\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1116,10 +1141,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "e23f3b59-f201-4650-b63a-4b691806946c",
+          "uuid": "6c64800e-3965-46bd-8e5a-ede5daa6e69a",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkCode\": \"linkCode003\",\n    \"expireDateTime\": \"2023-10-05T14:49:00.000Z\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1155,10 +1181,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "13129174-8b5a-4d01-8aac-8b1d154c069a",
+          "uuid": "868551b7-f020-4c71-abdb-288d3f4c8ef5",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkCode\": \"linkCode\",\n    \"expireDateTime\": \"2023-10-05T14:49:00.000Z\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1194,10 +1221,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "132c3dd1-e861-4a1d-af2f-3c0c3c2e421d",
+          "uuid": "8e083431-ec93-4fbb-b4eb-2c819f5dc609",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkCode\": \"linkCode_02\",\n    \"expireDateTime\": \"2023-10-05T14:49:00.000Z\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1233,10 +1261,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "3181a1d5-4546-4546-ac52-3e60a0ca944d",
+          "uuid": "11194ac5-ce77-45ff-94a8-b8a692a5d51a",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkCode\": \"string\",\n    \"expireDateTime\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_transaction_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1272,10 +1301,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "9732a06f-6433-4446-9be1-b66135e2a29b",
+          "uuid": "625f1fd5-3b73-44da-801e-5d7ffcee4661",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkCode\": \"string\",\n    \"expireDateTime\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_transaction_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1311,10 +1341,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "11375743-5be8-47a6-9fa1-2d99dd7e23b4",
+          "uuid": "b7cb73a5-53ad-4936-b641-4d8ab3cc0e51",
           "body": "",
           "latency": 0,
           "statusCode": 403,
@@ -1350,10 +1381,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "d41ab616-f897-4b38-bfce-a82c3ac78ed8",
+          "uuid": "69d4eece-b219-4533-aa23-314fe1954838",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkCode\": \"string\",\n    \"expireDateTime\": \"string\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_request\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1375,20 +1407,21 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
       "responseMode": null
     },
     {
-      "uuid": "8f51c09f-816b-4137-a8aa-8e30bd56a2f7",
+      "uuid": "163d2bce-a276-4332-8e8e-aa49b15f5e63",
       "documentation": "Endpoint to fetch all the public keys of the IDBB server. Returns public key set in the JWKS format",
       "method": "get",
       "endpoint": ".well-known/jwks.json",
       "responses": [
         {
-          "uuid": "a30c589f-e696-4472-96fa-0050decf17c7",
+          "uuid": "6c3df71b-2ccf-41ca-9bae-c35e35313e66",
           "body": "{\n  \"keys\": [\n    {{#repeat 4}}\n    {\n      \"kid\": \"{{faker 'random.alpha' 5}}\",\n      \"use\": \"sig\",\n      \"kty\": \"RSA\",\n      \"e\": \"string\",\n      \"n\": \"string\",\n      \"x5t#S256\": \"string\",\n      \"x5c\": \"string\",\n      \"exp\": \"string\"\n    }\n    {{/repeat}}\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1402,7 +1435,8 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
@@ -1410,13 +1444,13 @@
       "type": "http"
     },
     {
-      "uuid": "5674c6e6-5e80-4f0b-9bcb-30416f76d9a7",
+      "uuid": "fd256798-534c-4894-a472-d2c3fae26ecf",
       "documentation": "This endpoint is only for facilitating the OIDC provider details in a standard way.",
       "method": "get",
       "endpoint": ".well-known/openid-configuration",
       "responses": [
         {
-          "uuid": "ca26fe7c-4914-4670-8881-365692a23410",
+          "uuid": "d24f895d-4402-4b1b-8302-255738fca7fd",
           "body": "{\n  \"issuer\": \"string\",\n  \"authorization_endpoint\": \"string\",\n  \"token_endpoint\": \"string\",\n  \"userinfo_endpoint\": \"string\",\n  \"jwks_uri\": \"string\",\n  \"registration_endpoint\": \"string\",\n  \"scopes_supported\": [\n    \"openid\"\n  ],\n  \"response_types_supported\": [\n    \"code\"\n  ],\n  \"acr_values_supported\": [\n    \"string\"\n  ],\n  \"userinfo_signing_alg_values_supported\": [\n    \"string\"\n  ],\n  \"userinfo_encryption_alg_values_supported\": [\n    \"string\"\n  ],\n  \"userinfo_encryption_enc_values_supported\": [\n    \"string\"\n  ],\n  \"token_endpoint_auth_methods_supported\": [\n    \"private_key_jwt\"\n  ],\n  \"display_values_supported\": [\n    \"string\"\n  ],\n  \"claim_types_supported\": [\n    \"normal\"\n  ],\n  \"claims_supported\": [\n    \"string\"\n  ],\n  \"claims_locales_supported\": [\n    \"string\"\n  ],\n  \"ui_locales_supported\": [\n    \"string\"\n  ],\n  \"response_modes_supported\": [\n    \"query\"\n  ],\n  \"token_endpoint_auth_signing_alg_values_supported\": [\n    \"RS256\"\n  ],\n  \"id_token_signing_alg_values_supported\": [\n    \"RS256\"\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1430,7 +1464,8 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
@@ -1438,14 +1473,14 @@
       "type": "http"
     },
     {
-      "uuid": "7ab6c815-e9ae-4e3a-b04e-54239ab25d9f",
+      "uuid": "e1f64ed0-ac86-4811-8085-2f73ef6ea599",
       "type": "http",
       "documentation": "Validate the link-code and its expiry and generate the linkTransactionId",
       "method": "post",
       "endpoint": "linked-authorization/link-transaction",
       "responses": [
         {
-          "uuid": "07bbba8c-5628-405d-ae82-79558e3ac696",
+          "uuid": "e260d023-1caf-4457-b880-277abf9af8ff",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"linkTransactionId\": \"link_transaction_id_003\",\n    \"clientName\": \"OIDC Client\",\n    \"logoUrl\": \"http://example.com\",\n    \"authorizeScopes\": [\n      \"openid\"\n    ],\n    \"essentialClaims\": [\n      \"name\"\n    ],\n    \"voluntaryClaims\": [\n      \"nonce\"\n    ],\n    \"authFactors\": [\n      [\n        {\n          \"type\": \"PIN\",\n          \"count\": 0,\n          \"bioSubTypes\": [\n            \"string\"\n          ]\n        }\n      ]\n    ],\n    \"configs\": {}\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1479,10 +1514,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         },
         {
-          "uuid": "18707c70-5ac6-4243-9d28-0ca050e128fb",
+          "uuid": "07c283b8-3509-4b1b-bb16-abdc59477a4c",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"linkTransactionId\": \"link_transaction_id_01\",\n    \"clientName\": \"OIDC Client\",\n    \"logoUrl\": \"http://example.com\",\n    \"authorizeScopes\": [\n      \"openid\"\n    ],\n    \"essentialClaims\": [\n      \"name\"\n    ],\n    \"voluntaryClaims\": [\n      \"nonce\"\n    ],\n    \"authFactors\": [\n      [\n        {\n          \"type\": \"PIN\",\n          \"count\": 0,\n          \"bioSubTypes\": [\n            \"string\"\n          ]\n        }\n      ]\n    ],\n    \"configs\": {}\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1516,10 +1552,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "4cf2ff9a-43e4-45ec-8dda-13b6d61a2760",
+          "uuid": "fef4cf94-912e-4e75-ac32-95fc548d01fa",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"linkTransactionId\": \"\",\n    \"clientName\": \"\",\n    \"logoUrl\": \"\",\n    \"authorizeScopes\": [],\n    \"essentialClaims\": [],\n    \"voluntaryClaims\": [],\n    \"authFactors\": [\n      [\n        {\n          \"type\": \"PIN\",\n          \"count\": 0,\n          \"bioSubTypes\": []\n        }\n      ]\n    ],\n    \"configs\": {}\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_link_code\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1553,10 +1590,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "255b7fd3-65d5-4262-8fee-c88ce05f986d",
+          "uuid": "af41ece7-44f2-4afa-a3af-50fd338f9104",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {},\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_link_code\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1590,21 +1628,22 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
       "responseMode": null
     },
     {
-      "uuid": "cac1d80a-b7ea-4c5a-bb33-4c7c9e2d16e7",
+      "uuid": "3c5d56e0-4ca4-4a64-8fdf-e6a3408fe7e8",
       "type": "http",
       "documentation": "Checks the status of link code",
       "method": "post",
       "endpoint": "linked-authorization/link-status",
       "responses": [
         {
-          "uuid": "e5e585c3-d25b-468e-9353-558e93b2567f",
+          "uuid": "9d9dc262-0c42-4f92-b499-363cbb351eee",
           "body": "{\n  \"responseTIme\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkStatus\": \"LINKED\",\n    \"linkedDateTime\": \"2011-10-05T14:49:00.000Z\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1652,10 +1691,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         },
         {
-          "uuid": "f2502fb2-9789-488b-9026-7177fd71ebe2",
+          "uuid": "d23af834-5bd9-4427-82f0-6c99cdcced34",
           "body": "{\n  \"responseTIme\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkStatus\": \"LINKED\",\n    \"linkedDateTime\": \"2011-10-05T14:49:00.000Z\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_link_code\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1703,10 +1743,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "ad887cb0-8f86-414f-b6cf-1c0aa79f8673",
+          "uuid": "4a9265c2-830a-4452-9e90-5c29a223f60b",
           "body": "{\n  \"responseTIme\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkStatus\": \"LINKED\",\n    \"linkedDateTime\": \"2011-10-05T14:49:00.000Z\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_transaction_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1754,10 +1795,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "57af2a86-cd6b-4b72-b6f5-e07ff63549eb",
+          "uuid": "d8b17bf8-aefc-446e-8e9a-40775756c136",
           "body": "{\n  \"responseTIme\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkStatus\": \"LINKED\",\n    \"linkedDateTime\": \"2011-10-05T14:49:00.000Z\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_transaction_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1779,10 +1821,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "9cb8a231-62c8-4d13-afef-b150e0b67578",
+          "uuid": "c4dbe5e1-5cb7-4318-833d-e6447f143fa6",
           "body": "{\n  \"responseTime\": \"string\",\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_no_of_challenges\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1837,10 +1880,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "e002bcb5-f015-4b12-ac5c-84031e48b9f0",
+          "uuid": "1bacebfe-5004-4234-b231-d08dd2c6e5d6",
           "body": "{\n  \"responseTIme\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"transactionId\": \"{{bodyRaw 'request.transactionId'}}\",\n    \"linkStatus\": \"LINKED\",\n    \"linkedDateTime\": \"2011-10-05T14:49:00.000Z\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_link_code\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1888,21 +1932,22 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
       "responseMode": null
     },
     {
-      "uuid": "cd536d5a-9223-4596-8d8e-873e56f6d15a",
+      "uuid": "0d23ec82-d53a-4792-ba72-7fb7dc3f3cbe",
       "type": "http",
       "documentation": "Generate Link auth code",
       "method": "post",
       "endpoint": "linked-authorization/link-auth-code",
       "responses": [
         {
-          "uuid": "91ea9e63-f102-46a8-b7fd-8f31ba76af7b",
+          "uuid": "6f358d9d-191b-407e-974b-4361ecf006cf",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"code\": \"code\",\n    \"redirectUri\": \"redirectUri\",\n    \"state\": \"state\",\n    \"nonce\": \"nonce\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_link_code\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -1950,10 +1995,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         },
         {
-          "uuid": "dde1df64-be08-48d3-89a8-db8aad9cf785",
+          "uuid": "faa2ac67-261a-4ee5-9d04-d861b108a781",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"code\": \"code\",\n    \"redirectUri\": \"redirectUri\",\n    \"state\": \"state\",\n    \"nonce\": \"nonce\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2008,10 +2054,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "6e4ee8a0-a076-4007-9d70-fe6537373b31",
+          "uuid": "9139e50d-6d6e-4fb7-af34-4aa526b2cbeb",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"code\": \"code\",\n    \"redirectUri\": \"redirectUri\",\n    \"state\": \"state\",\n    \"nonce\": \"nonce\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_transaction_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2059,10 +2106,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "56cd107f-fc24-4052-a0fe-40432bed09aa",
+          "uuid": "c26e2456-dd58-4f85-9658-e204452e1872",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"code\": \"code\",\n    \"redirectUri\": \"redirectUri\",\n    \"state\": \"state\",\n    \"nonce\": \"nonce\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_link_code\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2110,10 +2158,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "06c278bb-602e-48c0-8d76-02fb38e059ae",
+          "uuid": "f0b2bdaf-431a-438d-9ed6-ebaef613df73",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"code\": \"code\",\n    \"redirectUri\": \"redirectUri\",\n    \"state\": \"state\",\n    \"nonce\": \"nonce\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_transaction_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2161,10 +2210,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "fdbfd5b7-fa3d-493a-8aa9-bae5067cf436",
+          "uuid": "433e0bd5-63cf-4032-af91-0657bdbd3dde",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"code\": \"code\",\n    \"redirectUri\": \"redirectUri\",\n    \"state\": \"state\",\n    \"nonce\": \"nonce\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_link_code\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2212,10 +2262,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "76994875-a29a-4ba6-b76e-7b3ca7b48c21",
+          "uuid": "928af883-114c-4cac-9d86-f02afbe16491",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"response\": {\n    \"code\": \"code\",\n    \"redirectUri\": \"redirectUri\",\n    \"state\": \"state\",\n    \"nonce\": \"nonce\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_request\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2263,20 +2314,21 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
       "responseMode": null
     },
     {
-      "uuid": "d4170fb5-331e-4065-8fc0-5a377bb57307",
+      "uuid": "665ed7fd-1a43-4a1c-873f-56ad9a632c58",
       "documentation": "",
       "method": "post",
       "endpoint": "oauth/token",
       "responses": [
         {
-          "uuid": "5c2cd23e-bb5e-4d43-9c2d-cf5eaf68fbaa",
+          "uuid": "aa63de40-17c7-4ce3-954a-2f7370ea6db6",
           "body": "{\n  \"id_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\",\n  \"access_token\": \"string.string.string\",\n  \"token_type\": \"Bearer\",\n  \"expires_in\": 0\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2284,7 +2336,7 @@
           "headers": [
             {
               "key": "Content-Type",
-              "value": "application/x-www-form-urlencoded"
+              "value": "application/json"
             },
             {
               "key": "Cache-Control",
@@ -2346,10 +2398,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "33e4b39e-1394-477e-af92-b787b3398bf4",
+          "uuid": "b625b72e-75bc-4173-8441-f871ae3899da",
           "body": "{\n  \"error\": \"invalid_assertion\",\n  \"error_description\": \"string\"\n}",
           "latency": 0,
           "statusCode": 400,
@@ -2383,10 +2436,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "7b2c9922-a21c-4c5a-9744-d1cdfbf63bd6",
+          "uuid": "3bd0b04a-3fac-4d78-a8c2-a4312d112e3e",
           "body": "{\n  \"error\": \"invalid_assertion_type\",\n  \"error_description\": \"string\"\n}",
           "latency": 0,
           "statusCode": 400,
@@ -2420,10 +2474,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "de6728ab-0e67-4747-9974-613bf9c625ad",
+          "uuid": "6dcaac89-b9ec-48ce-9edb-5a4d1bd098d3",
           "body": "{\n  \"error\": \"invalid_redirect_uri\",\n  \"error_description\": \"string\"\n}",
           "latency": 0,
           "statusCode": 400,
@@ -2465,10 +2520,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "b4ed8616-a68a-4559-ae00-67fb92a0157b",
+          "uuid": "a8ea82dd-e06e-473d-a93a-bc871b4b92de",
           "body": "{\n  \"error\": \"invalid_payload\",\n  \"error_description\": \"string\"\n}",
           "latency": 0,
           "statusCode": 400,
@@ -2530,10 +2586,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         },
         {
-          "uuid": "b4c73209-405e-4410-a31f-3ae44d8b8e20",
+          "uuid": "a54f53b9-494e-4d4f-a9d1-4a295572291f",
           "body": "{\n  \"error\": \"invalid_input\",\n  \"error_description\": \"string\"\n}",
           "latency": 0,
           "statusCode": 400,
@@ -2595,7 +2652,8 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
@@ -2603,14 +2661,14 @@
       "type": "http"
     },
     {
-      "uuid": "432e2b24-4bf0-4573-9cac-f5bd555a838a",
+      "uuid": "17e24054-78ae-4600-82a1-4f0264a4eb3c",
       "type": "http",
       "documentation": "Checks the correctness of the data",
       "method": "post",
       "endpoint": "linked-authorization/authenticate",
       "responses": [
         {
-          "uuid": "57addda6-caaf-4b8f-876e-8de5eb6717cc",
+          "uuid": "a0d1c7d0-5c15-432a-9c7a-30f2f92b9aa6",
           "body": "{\n  \"responseTime\": \"string\",\n  \"errors\": [\n    {\n      \"errorCode\": \"auth_failed\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2639,10 +2697,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "c183981f-fd34-4a0a-a603-85334bb6ab91",
+          "uuid": "3e1b6bf6-6ada-4e1a-92e3-d11c83913092",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"linkedTransactionId\": \"{{bodyRaw 'request.linkedTransactionId'}}\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2685,10 +2744,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         },
         {
-          "uuid": "32712fe4-c71c-46ed-b93d-8b3dbdb9e5f3",
+          "uuid": "c3500f3e-bc59-4b51-b3bf-58a744ec1403",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"linkedTransactionId\": \"{{bodyRaw 'request.linkedTransactionId'}}\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2731,10 +2791,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "385d72bd-96f5-4263-9efc-e2d1a94335c8",
+          "uuid": "cdfe2fdd-fe58-4a5e-ac92-36a553e025d8",
           "body": "{\n  \"responseTime\": \"string\",\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_no_of_challenges\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2756,10 +2817,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "c729f372-adaa-4930-baaa-52e0e37e1500",
+          "uuid": "510ae61f-565b-44ac-a911-cf1a64be1f2c",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_identifier\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2781,10 +2843,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "2dfb7758-1c2b-4947-8940-25ef99af0b16",
+          "uuid": "b4d51431-29a8-4624-91c5-12ee86704dbb",
           "body": "{\n  \"responseTime\": \"string\",\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_request\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2813,10 +2876,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "3c6891e0-3431-4375-86f0-6523cd2d0a1e",
+          "uuid": "d1be7b4e-1b78-4d20-b8ee-4b5b8b31caa9",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_transaction_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2845,10 +2909,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "569ced04-3966-4e79-b6f5-a3e38f990437",
+          "uuid": "ae13ce1d-5175-4dc7-b38d-b37f203e8980",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"linkedTransactionId\": \"{{bodyRaw 'request.linkedTransactionId'}}\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2862,10 +2927,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "1bd31ad3-5c6d-4e90-89df-6433fde1760c",
+          "uuid": "3b55068d-81fe-44ad-91ed-5f2e3531b31d",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_transaction_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2879,21 +2945,22 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
       "responseMode": null
     },
     {
-      "uuid": "4370f082-8742-4e17-8a05-0a5643f69e1e",
+      "uuid": "899ddb3a-2dfb-4a15-b4b1-dfcce7f69459",
       "type": "http",
       "documentation": "Wallet binding endpoint is invoked by Wallet's backend server.",
       "method": "post",
       "endpoint": "wallet-binding",
       "responses": [
         {
-          "uuid": "b0f9124a-f5d6-44d4-8373-5f2fcb8b7aca",
+          "uuid": "9fc4c845-1c21-4c32-9390-9a23e9b9cd3d",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"walletUserId\": \"string\",\n    \"certificate\": \"string\",\n    \"expireDateTime\": \"2023-07-21T12:34:56Z\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"duplicate_public_key\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2920,10 +2987,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "9d3cfad3-8697-4f8d-b685-88f06f12f1cc",
+          "uuid": "2dbe70a9-fea4-4878-ade2-89c87c6d9a2d",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"walletUserId\": \"string\",\n    \"certificate\": \"string\",\n    \"expireDateTime\": \"2029-07-21T12:34:56Z\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -2985,10 +3053,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         },
         {
-          "uuid": "c47d087b-0485-46b6-8e52-043eefe0ccec",
+          "uuid": "6a6398dd-35d3-435a-a23f-376c6f06b17d",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"walletUserId\": \"string\",\n    \"certificate\": \"string\",\n    \"expireDateTime\": \"2023-07-21T12:34:56Z\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"unsupported_challenge_format\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -3050,10 +3119,11 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         },
         {
-          "uuid": "fc19815f-ab7d-4972-ae2e-e6c7b79c1ec1",
+          "uuid": "8a3a3c99-c1b6-4e0e-8d44-aeb3e7337681",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"walletUserId\": \"string\",\n    \"certificate\": \"string\",\n    \"expireDateTime\": \"2023-07-21T12:34:56Z\"\n  },\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_public_key\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -3115,21 +3185,22 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
       "responseMode": null
     },
     {
-      "uuid": "67587670-d11a-4e8e-a3ef-5cceb0eeed64",
+      "uuid": "c1367d2e-3f08-4615-9e2a-752d4349670c",
       "type": "http",
       "documentation": "Linked Consent Endpoint",
       "method": "post",
       "endpoint": "linked-authorization/consent",
       "responses": [
         {
-          "uuid": "737da048-da05-4860-9950-592269b51e72",
+          "uuid": "b8504191-a369-4b9d-8434-55ad6d0b4dbd",
           "body": "{\n  \"responseTime\": \"string\",\n  \"response\": {\n    \"linkedTransactionId\": \"{{bodyRaw 'request.linkedTransactionId'}}\"\n  },\n  \"errors\": []\n}",
           "latency": 0,
           "statusCode": 200,
@@ -3156,10 +3227,11 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
         },
         {
-          "uuid": "b1b8269c-1963-4f97-b06c-debe5541ea8c",
+          "uuid": "340b65be-fff8-4337-bf6f-c49125c046e0",
           "body": "{\n  \"responseTime\": \"2011-10-05T14:49:00.000Z\",\n  \"errors\": [\n    {\n      \"errorCode\": \"invalid_transaction_id\",\n      \"errorMessage\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -3186,21 +3258,22 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": false,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
       "responseMode": null
     },
     {
-      "uuid": "415293ba-d1e6-484a-8803-8166cfc8974c",
+      "uuid": "dcb5fb20-d94d-47e3-a6c7-0364cde67a8b",
       "type": "http",
       "documentation": "API to receive user information",
       "method": "get",
       "endpoint": "oidc/userinfo",
       "responses": [
         {
-          "uuid": "0c40d908-de21-4c06-8687-c659b0109e96",
+          "uuid": "805e6d7e-5211-4a5e-9365-be8546f4b844",
           "body": "\"string\"",
           "latency": 0,
           "statusCode": 200,
@@ -3219,7 +3292,37 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "7c45789d-d5f7-4fca-a886-6754d7936c78",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "",
+      "responses": [
+        {
+          "uuid": "5c0a52bd-4162-4166-af76-0ab43eb940b6",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
         }
       ],
       "enabled": true,
@@ -3262,59 +3365,63 @@
   "rootChildren": [
     {
       "type": "route",
-      "uuid": "f90e90b4-866f-478f-b34c-a358d8196f01"
+      "uuid": "618fb22f-4fb4-48f8-b5dd-ba2c8f4ebd76"
     },
     {
       "type": "route",
-      "uuid": "91963d01-81ab-4fdd-8b43-9a08652e6173"
+      "uuid": "be9d693c-3a01-4184-b107-88de10e52847"
     },
     {
       "type": "route",
-      "uuid": "45bd6c8d-c23c-42dd-9a73-51e98c7d7588"
+      "uuid": "bc48b183-383f-41eb-999d-fe540017575e"
     },
     {
       "type": "route",
-      "uuid": "fe5ca74b-beea-400b-b9d4-057370aeb705"
+      "uuid": "52032d59-837b-4eb0-99b3-2ea11a19401b"
     },
     {
       "type": "route",
-      "uuid": "8f51c09f-816b-4137-a8aa-8e30bd56a2f7"
+      "uuid": "163d2bce-a276-4332-8e8e-aa49b15f5e63"
     },
     {
       "type": "route",
-      "uuid": "5674c6e6-5e80-4f0b-9bcb-30416f76d9a7"
+      "uuid": "fd256798-534c-4894-a472-d2c3fae26ecf"
     },
     {
       "type": "route",
-      "uuid": "7ab6c815-e9ae-4e3a-b04e-54239ab25d9f"
+      "uuid": "e1f64ed0-ac86-4811-8085-2f73ef6ea599"
     },
     {
       "type": "route",
-      "uuid": "cac1d80a-b7ea-4c5a-bb33-4c7c9e2d16e7"
+      "uuid": "3c5d56e0-4ca4-4a64-8fdf-e6a3408fe7e8"
     },
     {
       "type": "route",
-      "uuid": "cd536d5a-9223-4596-8d8e-873e56f6d15a"
+      "uuid": "0d23ec82-d53a-4792-ba72-7fb7dc3f3cbe"
     },
     {
       "type": "route",
-      "uuid": "4370f082-8742-4e17-8a05-0a5643f69e1e"
+      "uuid": "899ddb3a-2dfb-4a15-b4b1-dfcce7f69459"
     },
     {
       "type": "route",
-      "uuid": "67587670-d11a-4e8e-a3ef-5cceb0eeed64"
+      "uuid": "c1367d2e-3f08-4615-9e2a-752d4349670c"
     },
     {
       "type": "route",
-      "uuid": "432e2b24-4bf0-4573-9cac-f5bd555a838a"
+      "uuid": "17e24054-78ae-4600-82a1-4f0264a4eb3c"
     },
     {
       "type": "route",
-      "uuid": "d4170fb5-331e-4065-8fc0-5a377bb57307"
+      "uuid": "665ed7fd-1a43-4a1c-873f-56ad9a632c58"
     },
     {
       "type": "route",
-      "uuid": "415293ba-d1e6-484a-8803-8166cfc8974c"
+      "uuid": "dcb5fb20-d94d-47e3-a6c7-0364cde67a8b"
+    },
+    {
+      "type": "route",
+      "uuid": "7c45789d-d5f7-4fca-a886-6754d7936c78"
     }
   ]
 }
